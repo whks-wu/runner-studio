@@ -87,7 +87,7 @@
             background-color: var(--accent-color); margin: 10px auto 0;
         }
 
-        /* --- 关于我们 (优化版样式) --- */
+        /* --- 关于我们 --- */
         .about {
             background-color: white; text-align: center; max-width: 800px;
             margin: 0 auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); padding: 3rem 2rem;
@@ -197,7 +197,6 @@
             gap: 10px;
             margin-top: 10px;
         }
-        /* 更新后的标签样式：可点击 */
         .tag {
             background-color: #f4efe9;
             color: #666;
@@ -205,7 +204,7 @@
             border-radius: 20px;
             font-size: 0.9rem;
             border: 1px solid #eaddd3;
-            cursor: pointer; /* 鼠标变手型 */
+            cursor: pointer;
             transition: all 0.2s;
         }
         .tag:hover {
@@ -380,6 +379,14 @@
                 <div class="click-hint">点击查看学历详情</div>
             </div>
 
+            <!-- 🔥【修改】Pauline 老师的信息：更新了职位名称（强调母语者）和中文学历描述 -->
+            <div class="member-card" onclick="openModal('team-pauline.jpeg', '宝林', '（德语母语者）德语口语教练\n\n本科 - Goethe Universität Frankfurt am Main in Politikwissenschaft und Sinologie\n\n硕士在读 - Universität Trier DaF/DaZ (Deutsch als Fremdsprache/Deutsch als Zweitsprache)')">
+                <img src="team-pauline.jpeg" alt="Pauline" class="member-img">
+                <h3>Pauline</h3>
+                <p>（德语母语者）德语口语教练</p>
+                <div class="click-hint">点击查看学历详情</div>
+            </div>
+
         </div>
     </section>
 
@@ -431,12 +438,11 @@
     <section id="reviews">
         <h2 class="section-title">学员评价</h2>
         <div class="review-container">
-            <!-- 确保你的文件夹里有 comment.JPG (注意大小写) -->
             <img src="comment.JPG" alt="学员好评反馈" class="review-img">
         </div>
     </section>
 
-    <!-- 敬请期待 (更新了可点击的标签) -->
+    <!-- 敬请期待 -->
     <section id="future" style="background-color: white;">
         <h2 class="section-title">未来计划 & 敬请期待</h2>
         <div class="future-plans">
@@ -457,14 +463,12 @@
                     <h3>视频录播课程体系</h3>
                     <p>全方位的视频课程库正在筹备中，碎片化时间高效学习。</p>
                     <div class="future-tags">
-                        <!-- 已更新图片路径：text.png -->
+                        <!-- 🔥【修改】未来计划标签：已关联 text.png, word.png, grammar.png 图片 -->
                         <span class="tag" onclick="openModal('text.png', '德语文章精读', '我们会选取适合各语言级别的有趣的贴近生活的文章、书籍制作精读课程。实践证明，在专业教师的带领下精读德语文章，可以有效地提高学生的词汇量、德语表达能力、加深对语法的理解、扩展知识面。')">德语文章精读</span>
                         
-                        <!-- 已更新图片路径：word.png -->
                         <span class="tag" onclick="openModal('word.png', '词汇精讲', '我们的老师会帮助大家运用构词法、记忆技巧等各种方式，拆解德语词汇，不仅帮助你提升词汇量，更教会你如何快速牢固地记忆德语单词。')">词汇精讲</span>
                         
-                        <!-- 已更新图片路径：grammar.png -->
-                        <span class="tag" onclick="openModal('grammar.png', '语法精讲', '德语语法出了名的复杂多变，我们的老师条理清晰、深刻理解了德语语法，她会为你拨云见雾，帮助你轻松掌握德语语法。')">语法精讲</span>
+                        <span class="tag" onclick="openModal('grammar.png', '语法精讲', '德语语法出了名的复杂多变，我们的老师条理清晰、深厚理解了德语语法，她会为你拨云见雾，帮助你轻松掌握德语语法。')">语法精讲</span>
                     </div>
                 </div>
             </div>
