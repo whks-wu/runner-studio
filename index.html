@@ -144,6 +144,55 @@
         .product-item img { width: 100%; height: auto; display: block; }
         .product-title { text-align: center; padding: 10px; font-weight: bold; color: var(--text-color); }
 
+        /* --- 德语小游戏 --- */
+        .game-grid {
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 2.5rem; 
+            max-width: 1000px; 
+            margin: 0 auto;
+        }
+        .game-card {
+            background: white; 
+            border-radius: 15px; 
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+            transition: transform 0.3s;
+        }
+        .game-card:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 12px 25px rgba(0,0,0,0.1); 
+        }
+        .game-iframe-wrapper {
+            position: relative;
+            padding-bottom: 75%; /* 控制游戏窗口比例，75%即4:3。如果是宽屏游戏可改为 56.25% (16:9) */
+            height: 0;
+            overflow: hidden;
+            background-color: #fdf3ef; /* 加载前的底色 */
+        }
+        .game-iframe-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .game-info {
+            padding: 20px;
+            text-align: center;
+        }
+        .game-info h3 {
+            margin: 0 0 10px 0;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+        .game-info p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #666;
+        }
+
         /* --- 用户评价 --- */
         .review-container {
             max-width: 900px;
@@ -328,6 +377,7 @@
                 <li><a href="#about">关于我们</a></li>
                 <li><a href="#team">讲师团队</a></li>
                 <li><a href="#products">产品服务</a></li>
+                <li><a href="#games">德语小游戏</a></li>
                 <li><a href="#reviews">学员评价</a></li>
                 <li><a href="#contact">联系方式</a></li>
             </ul>
@@ -429,6 +479,33 @@
             <div class="product-item" onclick="openModal('product6.png', '小班教学', '我们的小班教学模式，最多1对3，确保每位学员都能获得充分关注和个性化指导，促进互动与合作，提升学习效果。')">
                 <img src="product6.png" alt="产品6">
                 <div class="product-title">小班教学</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="games">
+        <h2 class="section-title">德语小游戏</h2>
+        <div class="game-grid">
+            
+            <div class="game-card">
+                <div class="game-iframe-wrapper">
+                    <iframe src="https://learningapps.org/watch?v=pr4n1uwtc26" style="border:0px;width:100%;height:500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                </div>
+                <div class="game-info">
+                    <h3>情景匹配</h3>
+                    <p>通过图片和文字的匹配，提升你的德语理解能力。</p>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-iframe-wrapper">
+                    <iframe src="https://learningapps.org/watch?v=pqq4ej4gt26" style="border:0px;width:100%;height:500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                </div>
+                <div class="game-info">
+                    <h3>完形填空</h3>
+                    <p>通过阅读德语短文并完成填空，提升你的阅读理解能力。</p>
+                </div>
             </div>
 
         </div>
