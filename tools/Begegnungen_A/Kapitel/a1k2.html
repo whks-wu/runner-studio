@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A1+ Kapitel 2 - 互动语法</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- 侧边栏导航（高亮当前章节） -->
+    <div class="sidebar">
+        <h2>🇩🇪 Begegnungen A1+</h2>
+        <a href="../index.html" class="nav-item">🏠 返回课程主页</a>
+        <a href="a1k1.html" class="nav-item">📍 Kapitel 1: Guten Tag</a>
+        <a href="a1k2.html" class="nav-item active">📍 Kapitel 2: Erste Kontake am Arbeitsplatz</a>
+        <a href="a1k3.html" class="nav-item">📍 Kapitel 3: Unterwegs in München</a>
+        <a href="a1k4.html" class="nav-item">📍 Kapitel 4: Essen und Trinken </a>
+        <a href="a1k5.html" class="nav-item">📍 Kapitel 5: Alltag</a>
+        <a href="a1k6.html" class="nav-item">📍 Kapitel 6: Reisen</a>
+        <a href="a1k7.html" class="nav-item">📍 Kapitel 7: Wohnen</a>
+        <a href="a1k8.html" class="nav-item">📍 Kapitel 8: Begegnungen und Ereignisse</a>
+    </div>
+
+    <!-- 主内容 -->
+    <div class="main-content">
+        <h1 id="k1">A1+ Kapitel 2：不定冠词、否定、情态动词 können</h1>
+        <!-- ========================================== -->
+        <!-- 模块 1：不定冠词、否定冠词 (互动填空模式) -->
+        <!-- ========================================== -->
+        <div class="card" id="quiz-un-und-ne-gartikel">
+            <h3>🧩 1. Der unbestimmte Artikel, der negative Artikel 不定冠词、否定冠词 (N. A. D.)</h3>
+            <h3>N. 第一格</h3>
+            <table>
+                <tr>
+                    <th>定冠词</th>
+                    <th>不定冠词</th>
+                    <th>否定冠词</th>
+                </tr>
+                <tr>
+                    <td>die</td>
+                    <td><input type="text" class="quiz-input" data-answer="eine"></td>
+                    <td><input type="text" class="quiz-input" data-answer="keine"></td>
+                </tr>
+                <tr>
+                    <td>der</td>
+                    <td><input type="text" class="quiz-input" data-answer="ein"></td>
+                    <td><input type="text" class="quiz-input" data-answer="kein"></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>das</td>
+                    <td><input type="text" class="quiz-input" data-answer="ein"></td>
+                    <td><input type="text" class="quiz-input" data-answer="kein"></td>
+                </tr>
+                <tr>
+                    <td>die (Pl. 复数)</td>
+                    <td>————</td>
+                    <td><input type="text" class="quiz-input" data-answer="keine"></td>
+                </tr>
+            </table>
+            <div class="btn-group">
+                <button class="btn-check" onclick="checkAnswers('quiz-un-und-ne-gartikel')">✅ 提交批改</button>
+                <button class="btn-show" onclick="showAnswers('quiz-un-und-ne-gartikel')">👀 揭晓答案</button>
+            </div>
+            <h3>A. 第四格</h3>
+            <table>
+                <tr>
+                    <th>定冠词</th>
+                    <th>不定冠词</th>
+                    <th>否定冠词</th>
+                </tr>
+                <tr>
+                    <td>die</td>
+                    <td><input type="text" class="quiz-input" data-answer="eine"></td>
+                    <td><input type="text" class="quiz-input" data-answer="keine"></td>
+                </tr>
+                <tr>
+                    <td>der</td>
+                    <td><input type="text" class="quiz-input" data-answer="einen"></td>
+                    <td><input type="text" class="quiz-input" data-answer="keinen"></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>das</td>
+                    <td><input type="text" class="quiz-input" data-answer="ein"></td>
+                    <td><input type="text" class="quiz-input" data-answer="kein"></td>
+                </tr>
+                <tr>
+                    <td>die (Pl. 复数)</td>
+                    <td>————</td>
+                    <td><input type="text" class="quiz-input" data-answer="keine"></td>
+                </tr>
+            </table>
+            <div class="btn-group">
+                <button class="btn-check" onclick="checkAnswers('quiz-un-und-ne-gartikel')">✅ 提交批改</button>
+                <button class="btn-show" onclick="showAnswers('quiz-un-und-ne-gartikel')">👀 揭晓答案</button>
+            </div>
+            <h3>D. 第三格</h3>
+            <table>
+                <tr>
+                    <th>定冠词</th>
+                    <th>不定冠词</th>
+                    <th>否定冠词</th>
+                </tr>
+                <tr>
+                    <td>die</td>
+                    <td><input type="text" class="quiz-input" data-answer="einer"></td>
+                    <td><input type="text" class="quiz-input" data-answer="keiner"></td>
+                </tr>
+                <tr>
+                    <td>der</td>
+                    <td><input type="text" class="quiz-input" data-answer="einem"></td>
+                    <td><input type="text" class="quiz-input" data-answer="keinem"></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>das</td>
+                    <td><input type="text" class="quiz-input" data-answer="einem"></td>
+                    <td><input type="text" class="quiz-input" data-answer="keinem"></td>
+                </tr>
+                <tr>
+                    <td>die (Pl. 复数)</td>
+                    <td>————</td>
+                    <td><input type="text" class="quiz-input" data-answer="keinen"></td>
+                </tr>
+            </table>
+            <div class="btn-group">
+                <button class="btn-check" onclick="checkAnswers('quiz-un-und-ne-gartikel')">✅ 提交批改</button>
+                <button class="btn-show" onclick="showAnswers('quiz-un-und-ne-gartikel')">👀 揭晓答案</button>
+            </div>
+        </div>
+        <!-- ========================================== -->
+        <!-- 模块 2：如何选择否定词 -->
+        <!-- ========================================== -->
+        <div class="card" id="quiz-k2-negation">
+            <h3>🔗 连线题：如何选择 nicht 与 kein</h3>
+            <p style="color: #7f8c8d; font-size: 0.9em;">💡 玩法：点击左侧规则，再点击右侧对应的否定词进行匹配。</p>
+            
+            <div class="match-container" id="match-game">
+                <!-- 左侧：语法条件 -->
+                <div class="match-column">
+                    <!-- data-match="R2" 表示它的正确答案是 data-id="R2" 的元素 -->
+                    <div class="match-item left-item" data-match="R2">否定名词<br><span style="font-size:0.8em; color:#7f8c8d;">(不带冠词、带不定冠词)</span></div>
+                    <div class="match-item left-item" data-match="R1">否定形容词、动词<br><span style="font-size:0.8em; color:#7f8c8d;">(以及带定冠词的名词)</span></div>
+                </div>
+                <!-- 右侧：答案选项 -->
+                <div class="match-column">
+                    <div class="match-item right-item" data-id="R1">nicht</div>
+                    <div class="match-item right-item" data-id="R2">kein</div>
+                </div>
+            </div>
+
+            <div style="margin: 30px 0; border-top: 1px dashed #cbd5e1;"></div>
+
+            <h3 style="margin-top: 20px;">✍️ 填空题：实战演练 nicht 还是 kein</h3>
+            <ul class="fill-blank-list">
+                <li>1. Ich habe <input type="text" class="quiz-input" data-answer="kein"> Buch.</li>
+                <li>2. Ich lese das Buch <input type="text" class="quiz-input" data-answer="nicht">.</li>
+                <li>3. Das ist <input type="text" class="quiz-input" data-answer="nicht"> mein Buch.</li>
+                <li>4. Du bist <input type="text" class="quiz-input" data-answer="nicht"> dumm.</li>
+            </ul>
+            
+            <div class="btn-group">
+                <button class="btn-check" onclick="checkAnswers('quiz-k2-negation')">✅ 提交填空批改</button>
+                <button class="btn-show" onclick="showAnswers('quiz-k2-negation')">👀 揭晓填空答案</button>
+            </div>
+        </div>
+        <!-- ========================================== -->
+        <!-- 模块 3：情态动词 können 与框形结构 -->
+        <!-- ========================================== -->
+        <div class="card" id="quiz-k2-koennen">
+            <h3>🧩 情态动词 können 与框形结构</h3>
+    
+            <!-- 1. 语法规则与含义解析框 -->
+            <div style="background-color: #F8FAFC; padding: 15px; border-left: 4px solid var(--primary); border-radius: 4px; margin-bottom: 20px;">
+                <p style="color: #E74C3C; font-weight: bold; margin-top: 0; font-size: 1.1em;">
+            ⚠️ 语法规则：情态动词 + 动词原形。情态动词在第二位，动词原形在句末
+                </p>
+                <p style="margin-bottom: 0; font-size: 1.05em;">
+                    <strong>können 的核心含义：</strong> 1. 能力 ； 2. 可能性
+                </p>
+            </div>
+
+            <!-- 2. 动词变位互动表格 -->
+            <p style="color: #7f8c8d; font-size: 0.95em;">💡 互动填空：请填写 können 的现在时变位（提示：kann, kannst, kann, können, könnt, können）</p>
+            <table>
+                <tr><th>人称 (Person)</th><th>können 变位</th></tr>
+                <tr><td>ich</td><td><input type="text" class="quiz-input" data-answer="kann"></td></tr>
+                <tr><td>du</td><td><input type="text" class="quiz-input" data-answer="kannst"></td></tr>
+                <tr><td>er / sie / es</td><td><input type="text" class="quiz-input" data-answer="kann"></td></tr>
+                <tr><td>wir</td><td><input type="text" class="quiz-input" data-answer="können"></td></tr>
+                <tr><td>ihr</td><td><input type="text" class="quiz-input" data-answer="könnt"></td></tr>
+                <tr><td>sie / Sie</td><td><input type="text" class="quiz-input" data-answer="können"></td></tr>
+            </table>
+            
+            <div class="btn-group">
+                <button class="btn-check" onclick="checkAnswers('quiz-k2-koennen')">✅ 提交批改</button>
+                <button class="btn-show" onclick="showAnswers('quiz-k2-koennen')">👀 揭晓答案</button>
+            </div>
+
+            <div style="margin: 25px 0; border-top: 1px dashed #cbd5e1;"></div>
+
+            <!-- 3. 例句展示：突显框形结构 -->
+            <h3 style="margin-top: 20px;">💡 经典例句解析</h3>
+            <ul style="list-style: none; padding-left: 0; line-height: 2.2; font-size: 1.05em; color: #2C3E50;">
+                <li>
+                    👉 <strong>表示“能力”：</strong><br>
+                    <span style="background: #fff; padding: 6px 12px; border-radius: 6px; border: 1px solid #E0E6ED; display: inline-block; margin-top: 5px;">
+                        Ich <strong style="color: var(--primary);">kann</strong> Deutsch.
+                    </span>
+                    <span style="color: #7f8c8d; font-size: 0.9em; margin-left: 10px;">(我会德语。)</span>
+                </li>
+                <li style="margin-top: 15px;">
+                    👉 <strong>表示“可能性”（完美展示框形结构）：</strong><br>
+                    <span style="background: #fff; padding: 6px 12px; border-radius: 6px; border: 1px solid #E0E6ED; display: inline-block; margin-top: 5px;">
+                        Sie <strong style="color: var(--primary);">kann</strong> morgen mich <strong style="color: var(--primary);">besuchen</strong>.
+                    </span>
+                    <span style="color: #7f8c8d; font-size: 0.9em; margin-left: 10px;">(她明天可能会拜访我。)</span>
+                </li>
+            </ul>
+        </div>
+        <!-- ========================================== -->
+        <!-- 模块 4：交际/词汇互动区  -->
+        <!-- ========================================== -->
+
+            <div class="vocab-section" id="k2-vocab">
+                <h3 class="vocab-title">💬 模块 4：交际与核心词汇 (Alltag, Büro & Freizeit)</h3>
+
+                <!-- 第一部分：日常交际 (Alltagskommunikation) -->
+                <p><strong>1. 日常交际 (Alltagskommunikation) —— 点击卡片翻转</strong></p>
+                <div class="flashcard-grid">
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">Herzlich willkommen!</div>
+                            <div class="flip-card-back">热烈欢迎！</div>
+                        </div>
+                    </div>
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">Suchen Sie etwas?</div>
+                            <div class="flip-card-back">您在找什么东西吗？</div>
+                        </div>
+                    </div>
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" style="font-size: 0.85em;">Vielleicht können wir später zusammen Kaffee trinken.</div>
+                            <div class="flip-card-back">也许我们晚点可以一起喝杯咖啡。</div>
+                        </div>
+                    </div>
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">Wie geht es?</div>
+                            <div class="flip-card-back">你好吗？/ 近况如何？</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第二部分：办公场所与部门 (Am Arbeitsplatz & Abteilungen) -->
+                <div class="vocab-list-box" style="margin-top: 25px;">
+                    <p><strong>2. 工作场所与部门功能 (Am Arbeitsplatz & Abteilungen) —— 点击阴影查看</strong></p>
+                    <ul>
+                        <li>办公室评价：Das ist ein <span class="blur-text" onclick="this.classList.toggle('revealed')">schönes</span> Büro. (这是一个漂亮的办公室。)</li>
+                        <li>设备故障：Der Drucker ist <span class="blur-text" onclick="this.classList.toggle('revealed')">kaputt</span>. (打印机坏了。)</li>
+                        <li>机器不工作：Die Kaffeemaschine <span class="blur-text" onclick="this.classList.toggle('revealed')">funktioniert</span> / <span class="blur-text" onclick="this.classList.toggle('revealed')">geht</span> nicht. (咖啡机不工作了。)</li>
+                        <li>物品价格：Das ist <span class="blur-text" onclick="this.classList.toggle('revealed')">teuer</span>! (这太贵了！)</li>
+                        <li style="margin-top: 10px; border-top: 1px dashed #eee; padding-top: 10px;">🏢 <strong>行政部 (die Verwaltung)：</strong>Hier kann man Rechnungen <span class="blur-text" onclick="this.classList.toggle('revealed')">bezahlen</span>.(在这里可以支付账单。)</li>
+                        <li>☕ <strong>食堂 (die Kantine / die Mensa)：</strong>Hier kann man etwas <span class="blur-text" onclick="this.classList.toggle('revealed')">essen</span>.(在这里可以吃东西。)</li>
+                        <li>ℹ️ <strong>秘书处 (das Sekretariat)：</strong>Hier kann man Informationen <span class="blur-text" onclick="this.classList.toggle('revealed')">bekommen</span>.(在这里可以获取信息。)</li>
+                        <li>🗣️ <strong>语言中心 (das Sprachenzentrum)：</strong>Hier kann man Sprachkurse <span class="blur-text" onclick="this.classList.toggle('revealed')">besuchen</span>.(在这里可以参加语言课程。)</li>
+                    </ul>
+                </div>
+
+                <!-- 第三部分：业余时间 (Freizeit) -->
+                <div class="vocab-list-box" style="margin-top: 25px;">
+                    <p><strong>3. 业余时间与爱好 (Freizeit) —— 点击阴影查看 </strong></p>
+                    <ul>
+                        <li>询问看法：<span class="blur-text" onclick="this.classList.toggle('revealed')">Wie finden Sie</span> Marburg? (您觉得马尔堡怎么样？)</li>
+                        <li>周末安排：Was machen Sie am <span class="blur-text" onclick="this.classList.toggle('revealed')">Wochenende</span>? (您周末做什么？)</li>
+                        <li>乐器爱好：Welches <span class="blur-text" onclick="this.classList.toggle('revealed')">Instrument</span> spielen Sie? (您弹奏什么乐器？)</li>
+                        <li>表达不会：Ich kann leider <span class="blur-text" onclick="this.classList.toggle('revealed')">nicht gut</span> Salsa tanzen. (很遗憾，我萨尔萨舞跳得不好。)</li>
+                        <li>表达不会：Ich kann leider <span class="blur-text" onclick="this.classList.toggle('revealed')">kein Instrument</span> spielen. (很遗憾，我不会演奏任何乐器。)</li>
+                    </ul>
+                </div>
+
+                <!-- 第四部分：核心动词词组 (Wörterbuch der Verben) -->
+                <div class="vocab-list-box" style="margin-top: 25px;">
+                    <p><strong>4. 核心动词搭配提炼 (Wichtige Verben)</strong></p>
+                    <ul>
+                        <li>🏍️ 骑摩托车：Motorrad <span class="blur-text" onclick="this.classList.toggle('revealed')">fahren</span></li>
+                        <li>🧘‍♀️ 做瑜伽：Yoga <span class="blur-text" onclick="this.classList.toggle('revealed')">machen</span></li>
+                        <li>🌐 网上冲浪：im Internet <span class="blur-text" onclick="this.classList.toggle('revealed')">surfen</span></li>
+                        <li>❓ 缺少某物：Es <span class="blur-text" onclick="this.classList.toggle('revealed')">fehlt</span> etwas.</li>
+                        <li>🏢 静态放置：Im Büro <span class="blur-text" onclick="this.classList.toggle('revealed')">steht</span> ein Schreibtisch. (办公室里放着一张写字台。)</li>
+                    </ul>
+                </div>
+            </div>
+            <div><!-- 💾 生成高清长图按钮 -->
+            <h1>
+
+            </h1>
+        <button class="no-print" onclick="saveAsImage()" style="background-color: #28C76F; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-left: 10px; font-size: 15px;">
+            📸 保存批改长图
+        </button>
+    </div>
+    </div>
+    <script src="../script.js"></script>
+</html>
+<script>
+function saveAsImage() {
+    // 1. 找到需要截图的主区域
+    const content = document.querySelector('.main-content');
+    
+    // 2. 临时隐藏所有带有 no-print 类的按钮
+    const buttons = document.querySelectorAll('.no-print');
+    buttons.forEach(btn => btn.style.display = 'none');
+
+    // 🌟 核心修复魔术：瞬间解除 .main-content 的内部高度限制
+    // 先记录它原本的样式
+    const originalOverflow = content.style.overflow;
+    const originalHeight = content.style.height;
+    
+    // 强行把它的高度撑到最大，让所有题目都露出来！
+    content.style.overflow = 'visible';
+    content.style.height = content.scrollHeight + 'px';
+
+    // 强制滚回最顶部
+    window.scrollTo(0, 0);
+
+    // 3. 开始生成长图
+    html2canvas(content, {
+        useCORS: true,
+        scale: 2,               // 高清放大
+        backgroundColor: '#f9f9f9', // 强制加上白/浅灰底色，防止背景变黑
+        y: 0,
+        windowHeight: content.scrollHeight // 告诉插件按撑开后的总高度来拍
+    }).then(canvas => {
+        // 🌟 截图完成后：瞬间把样式恢复原状，不影响学员继续滑动做题
+        content.style.overflow = originalOverflow;
+        content.style.height = originalHeight;
+        
+        // 恢复按钮显示
+        buttons.forEach(btn => btn.style.display = 'inline-block');
+        
+        // 触发自动下载图片
+        let link = document.createElement('a');
+        link.download = '德语语法自测_完整错题本.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+    });
+}
+</script>
+
+</body>

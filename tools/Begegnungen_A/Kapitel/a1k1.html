@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>A1+ Kapitel 1 - 互动语法</title>
+    <link rel="stylesheet" href="../style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+    
+<body>
+    <!-- 侧边栏导航（高亮当前章节） -->
+    <div class="sidebar">
+    <h2>🇩🇪 Begegnungen A1+</h2>
+        <a href="../index.html" class="nav-item">🏠 返回课程主页</a>
+        <a href="a1k1.html" class="nav-item active">📍 Kapitel 1: Guten Tag</a>
+        <a href="a1k2.html" class="nav-item">📍 Kapitel 2: Erste Kontake am Arbeitsplatz</a>
+        <a href="a1k3.html" class="nav-item">📍 Kapitel 3: Unterwegs in München</a>
+        <a href="a1k4.html" class="nav-item">📍 Kapitel 4: Essen und Trinken </a>
+        <a href="a1k5.html" class="nav-item">📍 Kapitel 5: Alltag</a>
+        <a href="a1k6.html" class="nav-item">📍 Kapitel 6: Reisen</a>
+        <a href="a1k7.html" class="nav-item">📍 Kapitel 7: Wohnen</a>
+        <a href="a1k8.html" class="nav-item">📍 Kapitel 8: Begegnungen und Ereignisse</a>
+    </div>
+
+    <!-- 主内容 -->
+    <div class="main-content">
+        <h1 id="k1">A1+ Kapitel 1: 动词位置、人称代词、动词变位、定冠词和物主代词</h1>
+        <!-- ========================================== -->
+        <!-- 模块 1：动词在句中的位置 (刮刮卡模式) -->
+        <!-- ========================================== -->
+        <div class="card">
+            <h3>🎯 1. 动词在句中的位置 (点击阴影自测)</h3>
+            <p style="color: #666; font-size: 0.9em;">提示：点击灰色阴影区域，即可刮开正确答案。</p>
+            <p style="color: #666; font-size: 0.9em;">“第几位”指的不是第几个单词，而是整个成分位于第几位</p>
+
+            <table>
+                <tr>
+                    <th>句型</th>
+                    <th>动词位置</th>
+                    <th>例句</th>
+                </tr>
+                <tr>
+                    <td>Aussagesatz (陈述句)</td>
+                    <td><span class="blur-text" onclick="this.classList.toggle('revealed')">第二位</span></td>
+                    <td>Ich <strong>lerne</strong> Deutsch.</td>
+                </tr>
+                <tr>
+                    <td>Ja-Nein-Frage (一般疑问句)</td>
+                    <td><span class="blur-text" onclick="this.classList.toggle('revealed')">第一位</span></td>
+                    <td><strong>Lernst</strong> du Deutsch?</td>
+                </tr>
+                <tr>
+                    <td>Fragesatz (特殊疑问句)</td>
+                    <td><span class="blur-text" onclick="this.classList.toggle('revealed')">第二位</span></td>
+                    <td>Welche Fremdsprache <strong>lernst</strong> du?</td>
+                </tr>
+                <tr>
+                    <td>Imperativ (祈使句)</td>
+                    <td><span class="blur-text" onclick="this.classList.toggle('revealed')">第一位</span></td>
+                    <td><strong>Lernen</strong> Sie bitte Deutsch!</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- 模块 2：人称代词 (互动填空模式) -->
+        <!-- ========================================== -->
+        <div class="card" id="quiz-personalpronomen">
+            <h3>🧩 2. Personalpronomen 人称代词 (N. A. D.)</h3>
+            <p style="color: #E74C3C; font-size: 0.9em; font-weight: bold;">⚠️ 注意：请严格区分大小写（特别是敬称 Sie/Ihnen）！</p>
+            <table>
+                <tr>
+                    <th>人称代词 (中文)</th>
+                    <th>Nominativ (第一格 主格)</th>
+                    <th>Akkusativ (第四格 宾格)</th>
+                    <th>Dativ (第三格 与格)</th>
+                </tr>
+                <tr>
+                    <td>我 (1. Person Sg.)</td>
+                    <td>ich</td>
+                    <td><input type="text" class="quiz-input" data-answer="mich"></td>
+                    <td><input type="text" class="quiz-input" data-answer="mir"></td>
+                </tr>
+                <tr>
+                    <td>你 (2. Person Sg.)</td>
+                    <td>du</td>
+                    <td><input type="text" class="quiz-input" data-answer="dich"></td>
+                    <td><input type="text" class="quiz-input" data-answer="dir"></td>
+                </tr>
+                <tr>
+                    <td>她 (3. Person Sg. f.)</td>
+                    <td>sie</td>
+                    <td><input type="text" class="quiz-input" data-answer="sie"></td>
+                    <td><input type="text" class="quiz-input" data-answer="ihr"></td>
+                </tr>
+                <tr>
+                    <td>他 (3. Person Sg. m.)</td>
+                    <td>er</td>
+                    <td><input type="text" class="quiz-input" data-answer="ihn"></td>
+                    <td><input type="text" class="quiz-input" data-answer="ihm"></td>
+                </tr>
+                <tr>
+                    <td>它 (3. Person Sg. n.)</td>
+                    <td>es</td>
+                    <td><input type="text" class="quiz-input" data-answer="es"></td>
+                    <td><input type="text" class="quiz-input" data-answer="ihm"></td>
+                </tr>
+                <tr>
+                    <td>我们 (1. Person Pl.)</td>
+                    <td>wir</td>
+                    <td><input type="text" class="quiz-input" data-answer="uns"></td>
+                    <td><input type="text" class="quiz-input" data-answer="uns"></td>
+                </tr>
+                <tr>
+                    <td>你们 (2. Person Pl.)</td>
+                    <td>ihr</td>
+                    <td><input type="text" class="quiz-input" data-answer="euch"></td>
+                    <td><input type="text" class="quiz-input" data-answer="euch"></td>
+                </tr>
+                <tr>
+                    <td>他们/她们 (3. Person Pl.)</td>
+                    <td>sie</td>
+                    <td><input type="text" class="quiz-input" data-answer="sie"></td>
+                    <td><input type="text" class="quiz-input" data-answer="ihnen"></td>
+                </tr>
+                <tr>
+                    <td>您/您们 (formell 敬称)</td>
+                    <td>Sie</td>
+                    <td><input type="text" class="quiz-input" data-answer="Sie"></td>
+                    <td><input type="text" class="quiz-input" data-answer="Ihnen"></td>
+                </tr>
+            </table>
+            <div class="btn-group">
+                <button class="btn-check" onclick="checkAnswers('quiz-personalpronomen')">✅ 提交批改</button>
+                <button class="btn-show" onclick="showAnswers('quiz-personalpronomen')">👀 揭晓答案</button>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- 模块 3：现在时动词变位 (互动填空模式) -->
+        <!-- ========================================== -->
+        <div class="card" id="quiz-praesens">
+            <h3>⚙️ 3. Konjugation der Verben im Präsens 现在时动词变位</h3>
+            <p style="color: #666; font-size: 0.9em;">请填入 sein, haben, werden 及不规则动词 lesen 的现在时变位。</p>
+            <table>
+                <tr>
+                    <th>人称</th>
+                    <th>sein</th>
+                    <th>haben</th>
+                    <th>werden</th>
+                    <th>lesen (e → ie)</th>
+                </tr>
+                <tr>
+                    <td>ich</td>
+                    <td><input type="text" class="quiz-input" data-answer="bin"></td>
+                    <td><input type="text" class="quiz-input" data-answer="habe"></td>
+                    <td><input type="text" class="quiz-input" data-answer="werde"></td>
+                    <td><input type="text" class="quiz-input" data-answer="lese"></td>
+                </tr>
+                <tr>
+                    <td>du</td>
+                    <td><input type="text" class="quiz-input" data-answer="bist"></td>
+                    <td><input type="text" class="quiz-input" data-answer="hast"></td>
+                    <td><input type="text" class="quiz-input" data-answer="wirst"></td>
+                    <td><input type="text" class="quiz-input" data-answer="liest"></td>
+                </tr>
+                <tr>
+                    <td>sie/er/es</td>
+                    <td><input type="text" class="quiz-input" data-answer="ist"></td>
+                    <td><input type="text" class="quiz-input" data-answer="hat"></td>
+                    <td><input type="text" class="quiz-input" data-answer="wird"></td>
+                    <td><input type="text" class="quiz-input" data-answer="liest"></td>
+                </tr>
+                <tr>
+                    <td>wir</td>
+                    <td>sind</td> <!-- 保留部分已知项降低难度 -->
+                    <td><input type="text" class="quiz-input" data-answer="haben"></td>
+                    <td>werden</td>
+                    <td><input type="text" class="quiz-input" data-answer="lesen"></td>
+                </tr>
+                <tr>
+                    <td>ihr</td>
+                    <td><input type="text" class="quiz-input" data-answer="seid"></td>
+                    <td><input type="text" class="quiz-input" data-answer="habt"></td>
+                    <td><input type="text" class="quiz-input" data-answer="werdet"></td>
+                    <td><input type="text" class="quiz-input" data-answer="lest"></td>
+                </tr>
+                <tr>
+                    <td>Sie/sie (Pl.)</td>
+                    <td><input type="text" class="quiz-input" data-answer="sind"></td>
+                    <td>haben</td>
+                    <td><input type="text" class="quiz-input" data-answer="werden"></td>
+                    <td><input type="text" class="quiz-input" data-answer="lesen"></td>
+                </tr>
+            </table>
+            <div class="btn-group">
+                <button class="btn-check" onclick="checkAnswers('quiz-praesens')">✅ 提交批改</button>
+                <button class="btn-show" onclick="showAnswers('quiz-praesens')">👀 揭晓答案</button>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- 模块 4：定冠词 (互动填空模式) -->
+        <!-- ========================================== -->
+        <div class="card" id="quiz-bestimmter-artikel">
+            <h3>🏷️ 4. Der bestimmte Artikel 定冠词 (N. D. A.)</h3>
+            <table>
+                <tr>
+                    <th>Kasus (格)</th>
+                    <th>f. (阴性)</th>
+                    <th>m. (阳性)</th>
+                    <th>n. (中性)</th>
+                    <th>Pl. (复数)</th>
+                </tr>
+                <tr>
+                    <td>Nominativ (第一格)</td>
+                    <td><input type="text" class="quiz-input" data-answer="die"></td>
+                    <td><input type="text" class="quiz-input" data-answer="der"></td>
+                    <td><input type="text" class="quiz-input" data-answer="das"></td>
+                    <td><input type="text" class="quiz-input" data-answer="die"></td>
+                </tr>
+                <tr>
+                    <td>Akkusativ (第四格)</td>
+                    <td><input type="text" class="quiz-input" data-answer="die"></td>
+                    <td><input type="text" class="quiz-input" data-answer="den"></td>
+                    <td><input type="text" class="quiz-input" data-answer="das"></td>
+                    <td><input type="text" class="quiz-input" data-answer="die"></td>
+                </tr>
+                <tr>
+                    <td>Dativ (第三格)</td>
+                    <td><input type="text" class="quiz-input" data-answer="der"></td>
+                    <td><input type="text" class="quiz-input" data-answer="dem"></td>
+                    <td><input type="text" class="quiz-input" data-answer="dem"></td>
+                    <td><input type="text" class="quiz-input" data-answer="den"></td>
+                </tr>
+            </table>
+            <div class="btn-group">
+                <button class="btn-check" onclick="checkAnswers('quiz-bestimmter-artikel')">✅ 提交批改</button>
+                <button class="btn-show" onclick="showAnswers('quiz-bestimmter-artikel')">👀 揭晓答案</button>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- 模块 5：物主代词 (互动填空模式) -->
+        <!-- ========================================== -->
+        <div class="card" id="quiz-possessivartikel">
+            <h3>🏠 5. Der Possessivartikel 物主代词 (N. A. D.)</h3>
+            <p style="color: #666; font-size: 0.9em;">此处以 **mein (我的)** 为例进行变格练习：</p>
+            <table>
+                <tr>
+                    <th>Kasus (格)</th>
+                    <th>f. (阴性) <br><small>Tochter (女儿)</small></th>
+                    <th>m. (阳性) <br><small>Sohn (儿子)</small></th>
+                    <th>n. (中性) <br><small>Kind (孩子)</small></th>
+                    <th>Pl. (复数) <br><small>Kinder (孩子们)</small></th>
+                </tr>
+                <tr>
+                    <td>Nominativ (第一格)</td>
+                    <td><input type="text" class="quiz-input" data-answer="meine"></td>
+                    <td><input type="text" class="quiz-input" data-answer="mein"></td>
+                    <td><input type="text" class="quiz-input" data-answer="mein"></td>
+                    <td><input type="text" class="quiz-input" data-answer="meine"></td>
+                </tr>
+                <tr>
+                    <td>Akkusativ (第四格)</td>
+                    <td><input type="text" class="quiz-input" data-answer="meine"></td>
+                    <td><input type="text" class="quiz-input" data-answer="meinen"></td>
+                    <td><input type="text" class="quiz-input" data-answer="mein"></td>
+                    <td><input type="text" class="quiz-input" data-answer="meine"></td>
+                </tr>
+                <tr>
+                    <td>Dativ (第三格)</td>
+                    <td><input type="text" class="quiz-input" data-answer="meiner"></td>
+                    <td><input type="text" class="quiz-input" data-answer="meinem"></td>
+                    <td><input type="text" class="quiz-input" data-answer="meinem"></td>
+                    <td><input type="text" class="quiz-input" data-answer="meinen"></td>
+                </tr>
+            </table>
+            <div class="btn-group">
+                <button class="btn-check" onclick="checkAnswers('quiz-possessivartikel')">✅ 提交批改</button>
+                <button class="btn-show" onclick="showAnswers('quiz-possessivartikel')">👀 揭晓答案</button>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- 模块 6：交际/词汇互动区 (全量完整版) -->
+        <!-- ========================================== -->
+        <div class="vocab-section" id="k1-vocab">
+            <h3 class="vocab-title">💬 交际与核心词汇 (Kommunikation & Wortschatz)</h3>
+            
+            <p><strong>第一部分：个人信息问答 (Fragen und Antworten zur Person)</strong></p>
+            <p style="color: #666; font-size: 0.9em;">提示：点击卡片翻转查看中文及完整回答句型。</p>
+            
+            <div class="flashcard-grid">
+                <!-- 名字 -->
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-q">Wie heißen Sie?</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card-a">您叫什么名字？</div>
+                            <div class="card-hint">Ich heiße (Max Müller).<br>Mein Name ist (Max Müller).</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 名与姓 -->
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-q">Wie ist Ihr Vorname / Familienname?</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card-a">您的名/姓氏是什么？</div>
+                            <div class="card-hint">Mein Vorname ist (Max).<br>Mein Familienname ist (Müller).</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 年龄 -->
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-q">Wie alt sind Sie?</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card-a">您多大了？</div>
+                            <div class="card-hint">Ich bin (30) Jahre alt.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 来源 -->
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-q">Woher kommen Sie?</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card-a">您来自哪里？</div>
+                            <div class="card-hint">Ich komme aus (Spanien).</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 居住地 -->
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-q">Wo wohnen Sie?</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card-a">您住在哪里？</div>
+                            <div class="card-hint">Ich wohne in (Madrid).</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 职业 -->
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-q">Was sind Sie von Beruf?</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card-a">您的职业是什么？</div>
+                            <div class="card-hint">Ich bin (Lehrer).<br>Ich arbeite als (Managerin) bei (Siemens).</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 学业 -->
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-q">Was / Wo studieren Sie?</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card-a">您学什么专业/在哪读书？</div>
+                            <div class="card-hint">Ich studiere (Medizin / in Berlin).</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 语言 -->
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-q">Welche Sprachen sprechen Sie?</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card-a">您说哪些语言？</div>
+                            <div class="card-hint">Meine Muttersprache ist (Italienisch).<br>Ich spreche sehr gut/gut/ein bisschen (Englisch).<br>Ich lerne jetzt (Deutsch).</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 爱好 (提问) -->
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-q">Was sind deine / Ihre Hobbys?</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card-a">你的/您的爱好是什么？</div>
+                            <div class="card-hint">Ich spiele/lese/höre gern...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 问候与家庭状态 -->
+            <div class="vocab-list-box">
+                <p><strong>第二部分：问候与家庭状态 (Begrüßung & Familienstand)</strong></p>
+                <ul>
+                    <li>日常问候：<span class="blur-text" onclick="this.classList.toggle('revealed')">Guten Morgen!</span> (早上好) / <span class="blur-text" onclick="this.classList.toggle('revealed')">Guten Tag!</span> (你好) / <span class="blur-text" onclick="this.classList.toggle('revealed')">Guten Abend!</span> (晚上好) / <span class="blur-text" onclick="this.classList.toggle('revealed')">Hallo!</span> (哈喽)</li>
+                    <li>婚姻状况：Ich bin <span class="blur-text" onclick="this.classList.toggle('revealed')">ledig / verheiratet / geschieden</span>. (我单身/已婚/离异。)</li>
+                    <li>子女情况：Ich habe <span class="blur-text" onclick="this.classList.toggle('revealed')">(zwei / keine) Kinder</span>. (我有两个/没有孩子。)</li>
+                </ul>
+            </div>
+
+            <!-- 动词与爱好刮刮乐 -->
+            <div class="vocab-list-box">
+                <p><strong>第三部分：核心动词与爱好搭配 (Verben & Hobbys)</strong></p>
+                <p style="color: #666; font-size: 0.9em;">提示：点击阴影部分，测试你是否能背出正确的动词或介词组合。</p>
+                <ul>
+                    <li>作为经理工作：<span class="blur-text" onclick="this.classList.toggle('revealed')">als</span> Managerin <span class="blur-text" onclick="this.classList.toggle('revealed')">arbeiten</span></li>
+                    <li>学习德语：Deutsch <span class="blur-text" onclick="this.classList.toggle('revealed')">lernen</span></li>
+                    <li>说英语：Englisch <span class="blur-text" onclick="this.classList.toggle('revealed')">sprechen</span></li>
+                    <li>学习医学专业：Medizin <span class="blur-text" onclick="this.classList.toggle('revealed')">studieren</span></li>
+                    <li>住在柏林：<span class="blur-text" onclick="this.classList.toggle('revealed')">in</span> Berlin wohnen</li>
+                    <li>来自法国：<span class="blur-text" onclick="this.classList.toggle('revealed')">aus</span> Frankreich kommen</li>
+                    <li>读一本书 / 喜欢读小说：ein Buch <span class="blur-text" onclick="this.classList.toggle('revealed')">lesen</span> / Ich lese gern <span class="blur-text" onclick="this.classList.toggle('revealed')">(Romane)</span>.</li>
+                    <li>听音乐 / 喜欢听爵士乐：Musik <span class="blur-text" onclick="this.classList.toggle('revealed')">hören</span> / Ich höre gern <span class="blur-text" onclick="this.classList.toggle('revealed')">(Jazz-Musik)</span>.</li>
+                    <li>踢足球：<span class="blur-text" onclick="this.classList.toggle('revealed')">Fußball spielen</span> / Ich spiele gern <span class="blur-text" onclick="this.classList.toggle('revealed')">(Fußball)</span>.</li>
+                    <li>写一首诗：ein Gedicht <span class="blur-text" onclick="this.classList.toggle('revealed')">schreiben</span> / Ich schreibe gern <span class="blur-text" onclick="this.classList.toggle('revealed')">(Gedichte)</span>.</li>
+                    <li>在合唱团唱歌：Ich <span class="blur-text" onclick="this.classList.toggle('revealed')">singe (im Chor)</span>.</li>
+                </ul>
+            </div>
+        </div>
+        <div><!-- 💾 生成高清长图按钮 -->
+            <h1>
+
+            </h1>
+        <button class="no-print" onclick="saveAsImage()" style="background-color: #28C76F; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-left: 10px; font-size: 15px;">
+            📸 保存批改长图
+        </button>
+    </div>
+    </div>
+    <script src="../script.js"></script>
+</html>
+<script>
+function saveAsImage() {
+    // 1. 找到需要截图的主区域
+    const content = document.querySelector('.main-content');
+    
+    // 2. 临时隐藏所有带有 no-print 类的按钮
+    const buttons = document.querySelectorAll('.no-print');
+    buttons.forEach(btn => btn.style.display = 'none');
+
+    // 🌟 核心修复魔术：瞬间解除 .main-content 的内部高度限制
+    // 先记录它原本的样式
+    const originalOverflow = content.style.overflow;
+    const originalHeight = content.style.height;
+    
+    // 强行把它的高度撑到最大，让所有题目都露出来！
+    content.style.overflow = 'visible';
+    content.style.height = content.scrollHeight + 'px';
+
+    // 强制滚回最顶部
+    window.scrollTo(0, 0);
+
+    // 3. 开始生成长图
+    html2canvas(content, {
+        useCORS: true,
+        scale: 2,               // 高清放大
+        backgroundColor: '#f9f9f9', // 强制加上白/浅灰底色，防止背景变黑
+        y: 0,
+        windowHeight: content.scrollHeight // 告诉插件按撑开后的总高度来拍
+    }).then(canvas => {
+        // 🌟 截图完成后：瞬间把样式恢复原状，不影响学员继续滑动做题
+        content.style.overflow = originalOverflow;
+        content.style.height = originalHeight;
+        
+        // 恢复按钮显示
+        buttons.forEach(btn => btn.style.display = 'inline-block');
+        
+        // 触发自动下载图片
+        let link = document.createElement('a');
+        link.download = '德语语法自测_完整错题本.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+    });
+}
+</script>
+
+</body>

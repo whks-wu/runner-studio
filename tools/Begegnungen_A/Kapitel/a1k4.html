@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>A1+ Kapitel 4 - 互动语法</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- 侧边栏导航（高亮当前章节） -->
+    <div class="sidebar">
+        <h2>🇩🇪 Begegnungen A1+</h2>
+        <a href="../index.html" class="nav-item">🏠 返回课程主页</a>
+        <a href="a1k1.html" class="nav-item">📍 Kapitel 1: Guten Tag</a>
+        <a href="a1k2.html" class="nav-item">📍 Kapitel 2: Erste Kontake am Arbeitsplatz</a>
+        <a href="a1k3.html" class="nav-item">📍 Kapitel 3: Unterwegs in München</a>
+        <a href="a1k4.html" class="nav-item active">📍 Kapitel 4: Essen und Trinken </a>
+        <a href="a1k5.html" class="nav-item">📍 Kapitel 5: Alltag</a>
+        <a href="a1k6.html" class="nav-item">📍 Kapitel 6: Reisen</a>
+        <a href="a1k7.html" class="nav-item">📍 Kapitel 7: Wohnen</a>
+        <a href="a1k8.html" class="nav-item">📍 Kapitel 8: Begegnungen und Ereignisse</a>
+    </div>
+
+    <!-- 主内容 -->
+    <div class="main-content">
+        <h1 id="k2">A1+ Kapitel 4：零冠词形容词变格、mögen、过去式</h1>
+
+            <!-- 1. 零冠词形容词变格 -->
+            <div class="card" id="quiz-k4-adj">
+                <h3>🧩 第一格、第四格零冠词形容词变格 (Adjektivdeklination)</h3>
+                
+                <div style="background-color: #F8FAFC; padding: 12px; border-left: 4px solid var(--primary); border-radius: 4px; margin-bottom: 15px;">
+                    <p style="margin: 0; font-size: 1.05em; color: #2C3E50;">
+                        <strong>💡 核心规则：</strong>当名词前没有冠词（零冠词）时，<strong>形容词词尾必须体现出被修饰名词的词性与格</strong>。
+                    </p>
+                </div>
+
+                <table>
+                    <tr>
+                        <th width="16%">格 (Kasus)</th>
+                        <th width="21%">maskulin (阳性)</th>
+                        <th width="21%">feminin (阴性)</th>
+                        <th width="21%">neutrum (中性)</th>
+                        <th width="21%">Plural (复数)</th>
+                    </tr>
+                    <tr>
+                        <td>Nominativ<br><span style="font-size: 0.8em; font-weight: normal;">(第一格)</span></td>
+                        <td><input type="text" class="quiz-input" data-answer="roher" style="width: 55px;"> Schinken</td>
+                        <td><input type="text" class="quiz-input" data-answer="kalte" style="width: 55px;"> Milch</td>
+                        <td><input type="text" class="quiz-input" data-answer="altes" style="width: 55px;"> Brot</td>
+                        <td><input type="text" class="quiz-input" data-answer="gekochte" style="width: 65px;"> Eier</td>
+                    </tr>
+                    <tr>
+                        <td>Akkusativ<br><span style="font-size: 0.8em; font-weight: normal;">(第四格)</span></td>
+                        <td><input type="text" class="quiz-input" data-answer="rohen" style="width: 55px;"> Schinken</td>
+                        <td><input type="text" class="quiz-input" data-answer="kalte" style="width: 55px;"> Milch</td>
+                        <td><input type="text" class="quiz-input" data-answer="altes" style="width: 55px;"> Brot</td>
+                        <td><input type="text" class="quiz-input" data-answer="gekochte" style="width: 65px;"> Eier</td>
+                    </tr>
+                </table>
+                <div class="btn-group">
+                    <button class="btn-check" onclick="checkAnswers('quiz-k4-adj')">✅ 提交批改</button>
+                    <button class="btn-show" onclick="showAnswers('quiz-k4-adj')">👀 揭晓答案</button>
+                </div>
+            </div>
+
+            <!-- 2. 动词 mögen 变位 -->
+            <div class="card" id="quiz-k4-moegen">
+                <h3>🧩 表达喜好：动词 mögen (喜欢)</h3>
+                <table>
+                    <tr><th>人称 (Person)</th><th>mögen 变位</th></tr>
+                    <tr><td>ich</td><td><input type="text" class="quiz-input" data-answer="mag"></td></tr>
+                    <tr><td>du</td><td><input type="text" class="quiz-input" data-answer="magst"></td></tr>
+                    <tr><td>sie / er / es</td><td><input type="text" class="quiz-input" data-answer="mag"></td></tr>
+                </table>
+                <div class="btn-group">
+                    <button class="btn-check" onclick="checkAnswers('quiz-k4-moegen')">✅ 提交批改</button>
+                    <button class="btn-show" onclick="showAnswers('quiz-k4-moegen')">👀 揭晓答案</button>
+                </div>
+            </div>
+
+            <!-- 3. 名词复数与量词 -->
+            <div class="card">
+                <h3>🎯 常见复数词尾与量词规则 (Plural & Mengenangaben)</h3>
+                
+                <div class="vocab-list-box">
+                    <p><strong>1. 常见名词复数词尾规律：</strong></p>
+                    <ul>
+                        <li><strong>单复同形：</strong> das Zimmer ➡️ die <span class="blur-text" onclick="this.classList.toggle('revealed')">Zimmer</span></li>
+                        <li><strong>-e (常伴随变音 Umlaut)：</strong> das Telefon ➡️ die Telefone / der Baum ➡️ die <span class="blur-text" onclick="this.classList.toggle('revealed')">Bäume</span></li>
+                        <li><strong>-s (多为外来词)：</strong> das Hobby ➡️ die <span class="blur-text" onclick="this.classList.toggle('revealed')">Hobbys</span></li>
+                        <li><strong>-er (常伴随变音 Umlaut)：</strong> das Haus ➡️ die <span class="blur-text" onclick="this.classList.toggle('revealed')">Häuser</span></li>
+                        <li><strong>-(e)n：</strong> die Banane ➡️ die <span class="blur-text" onclick="this.classList.toggle('revealed')">Bananen</span></li>
+                        <li style="color: var(--wrong);">⚠️ <strong>特殊变形 (不加常规词尾)：</strong> das Museum ➡️ die <span class="blur-text" onclick="this.classList.toggle('revealed')">Museen</span></li>
+                    </ul>
+                </div>
+
+                <div class="vocab-list-box" style="margin-top: 15px; border-left: 4px solid var(--accent);">
+                    <p><strong>2. 名词作量词使用的特殊规则：</strong></p>
+                    <p style="font-size: 0.95em; color: #444; margin-bottom: 10px;">
+                        当名词作为<strong>量词</strong>使用时，<strong>阳性和中性名词没有复数形式（保持单数），而阴性名词有复数形式</strong>。
+                    </p>
+                    <ul>
+                        <li>🥪 zwei <strong style="color: var(--primary);">Scheiben</strong> Schinken <span style="font-size: 0.85em; color: #7f8c8d;">(die Scheibe 为阴性，作量词变复数 Scheiben)</span></li>
+                        <li>🥔 zwei <strong style="color: var(--primary);">Kilo</strong> Kartoffeln <span style="font-size: 0.85em; color: #7f8c8d;">(das Kilo 为中性，作量词保持单数形式 Kilo)</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 4. 过去式 (sein / haben) -->
+            <div class="card" id="quiz-k4-praeteritum">
+                <h3>⏳ 动词过去式：sein 与 haben (Präteritum)</h3>
+                <table>
+                    <tr>
+                        <th width="15%">人称</th>
+                        <th width="42.5%">sein (Präteritum)</th>
+                        <th width="42.5%">haben (Präteritum)</th>
+                    </tr>
+                    <tr>
+                        <td>ich</td>
+                        <td><input type="text" class="quiz-input" data-answer="war"></td>
+                        <td><input type="text" class="quiz-input" data-answer="hatte"></td>
+                    </tr>
+                    <tr>
+                        <td>du</td>
+                        <td><input type="text" class="quiz-input" data-answer="warst"></td>
+                        <td><input type="text" class="quiz-input" data-answer="hattest"></td>
+                    </tr>
+                    <tr>
+                        <td>er/sie/es</td>
+                        <td><input type="text" class="quiz-input" data-answer="war"></td>
+                        <td><input type="text" class="quiz-input" data-answer="hatte"></td>
+                    </tr>
+                    <tr>
+                        <td>wir</td>
+                        <td><input type="text" class="quiz-input" data-answer="waren"></td>
+                        <td><input type="text" class="quiz-input" data-answer="hatten"></td>
+                    </tr>
+                    <tr>
+                        <td>ihr</td>
+                        <td><input type="text" class="quiz-input" data-answer="wart"></td>
+                        <td><input type="text" class="quiz-input" data-answer="hattet"></td>
+                    </tr>
+                    <tr>
+                        <td>sie/Sie</td>
+                        <td><input type="text" class="quiz-input" data-answer="waren"></td>
+                        <td><input type="text" class="quiz-input" data-answer="hatten"></td>
+                    </tr>
+                </table>
+                <div class="btn-group">
+                    <button class="btn-check" onclick="checkAnswers('quiz-k4-praeteritum')">✅ 提交批改</button>
+                    <button class="btn-show" onclick="showAnswers('quiz-k4-praeteritum')">👀 揭晓答案</button>
+                </div>
+            </div>
+        
+            <!-- ========================================== -->
+            <!-- 模块5：交际与词汇互动区 (Kapitel 4) -->
+            <!-- ========================================== -->
+            <div class="vocab-section" id="k4-vocab">
+                <h3 class="vocab-title">💬 K4 交际与核心词汇 (Essen, Trinken & Kochen)</h3>
+
+                <!-- 第一部分：在餐厅与购物 -->
+                <p><strong>1. 餐厅点餐与食物采购 —— 点击卡片翻转</strong></p>
+                <div class="flashcard-grid">
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" style="font-size: 0.9em;">Ich möchte bitte eine Tasse Kaffee.</div>
+                            <div class="flip-card-back">请给我来一杯咖啡。</div>
+                        </div>
+                    </div>
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" style="font-size: 0.9em;">Wie schmeckt der Salat?</div>
+                            <div class="flip-card-back">沙拉味道怎么样？</div>
+                        </div>
+                    </div>
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" style="font-size: 0.9em;">Die Rechnung bitte!</div>
+                            <div class="flip-card-back">请结账！</div>
+                        </div>
+                    </div>
+                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" style="font-size: 0.9em;">Ich möchte bitte zwei Kilo Kartoffeln.</div>
+                            <div class="flip-card-back">我想要两公斤土豆。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vocab-list-box" style="margin-top: 15px;">
+                    <p><strong>🍽️ 餐厅与购物高频句型 (点击阴影查看)：</strong></p>
+                    <ul>
+                        <li>品尝评价：Er schmeckt <span class="blur-text" onclick="this.classList.toggle('revealed')">ausgezeichnet</span> / gut! (它味道极好/很好！)</li>
+                        <li>食物感受：Ich finde ihn <span class="blur-text" onclick="this.classList.toggle('revealed')">lecker</span> / köstlich! (我觉得它很好吃/美味。)</li>
+                        <li>购物需求：Ich brauche 200 Gramm <span class="blur-text" onclick="this.classList.toggle('revealed')">Schinken</span>. (我需要200克火腿。)</li>
+                        <li>结账付款：Haben Sie das Geld <span class="blur-text" onclick="this.classList.toggle('revealed')">passend</span>? (您有零钱吗/正好的钱吗？)</li>
+                    </ul>
+                </div>
+
+                <!-- 第二部分：烹饪与饮食习惯 -->
+                <div class="vocab-list-box" style="margin-top: 25px;">
+                    <p><strong>2. 烹饪指令与饮食习惯 (Kochen & Essgewohnheiten) —— 点击阴影查看</strong></p>
+                    <ul>
+                        <li>削水果皮：<span class="blur-text" onclick="this.classList.toggle('revealed')">Schälen</span> Sie das Obst. (请削水果皮。)</li>
+                        <li>切苹果：Schneiden Sie die <span class="blur-text" onclick="this.classList.toggle('revealed')">Äpfel</span>. (请切苹果。)</li>
+                        <li>煎肉类：<span class="blur-text" onclick="this.classList.toggle('revealed')">Braten</span> Sie das Fleisch. (请煎肉。)</li>
+                        <li>早餐习惯：Ich esse zum Frühstück <span class="blur-text" onclick="this.classList.toggle('revealed')">frisches Obst</span>. (我早餐吃新鲜水果。)</li>
+                        <li>午餐组成：Das Mittagessen besteht aus <span class="blur-text" onclick="this.classList.toggle('revealed')">Fleisch und Kartoffeln</span>. (午餐由肉和土豆组成。)</li>
+                    </ul>
+                </div>
+
+                <!-- 第三部分：核心动词词组 -->
+                <div class="vocab-list-box" style="margin-top: 25px;">
+                    <p><strong>3. 核心动词搭配提炼 (Kleines Wörterbuch der Verben)</strong></p>
+                    <ul>
+                        <li>🍳 煎肉：Fleisch <span class="blur-text" onclick="this.classList.toggle('revealed')">braten</span></li>
+                        <li>🥔 含有成分：Die Kartoffel <span class="blur-text" onclick="this.classList.toggle('revealed')">enthält</span>... (土豆含有...)</li>
+                        <li>🍷 混合酒水：Wein mit Wasser <span class="blur-text" onclick="this.classList.toggle('revealed')">mischen</span> (水和酒混合)</li>
+                        <li>🍎 削苹果：einen Apfel <span class="blur-text" onclick="this.classList.toggle('revealed')">schälen</span></li>
+                        <li>🌿 洗欧芹：die Petersilie <span class="blur-text" onclick="this.classList.toggle('revealed')">waschen</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div><!-- 💾 生成高清长图按钮 -->
+            <h1>
+
+            </h1>
+        <button class="no-print" onclick="saveAsImage()" style="background-color: #28C76F; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-left: 10px; font-size: 15px;">
+            📸 保存批改长图
+        </button>
+    </div>
+    </div>
+    <script src="../script.js"></script>
+</html>
+<script>
+function saveAsImage() {
+    // 1. 找到需要截图的主区域
+    const content = document.querySelector('.main-content');
+    
+    // 2. 临时隐藏所有带有 no-print 类的按钮
+    const buttons = document.querySelectorAll('.no-print');
+    buttons.forEach(btn => btn.style.display = 'none');
+
+    // 🌟 核心修复魔术：瞬间解除 .main-content 的内部高度限制
+    // 先记录它原本的样式
+    const originalOverflow = content.style.overflow;
+    const originalHeight = content.style.height;
+    
+    // 强行把它的高度撑到最大，让所有题目都露出来！
+    content.style.overflow = 'visible';
+    content.style.height = content.scrollHeight + 'px';
+
+    // 强制滚回最顶部
+    window.scrollTo(0, 0);
+
+    // 3. 开始生成长图
+    html2canvas(content, {
+        useCORS: true,
+        scale: 2,               // 高清放大
+        backgroundColor: '#f9f9f9', // 强制加上白/浅灰底色，防止背景变黑
+        y: 0,
+        windowHeight: content.scrollHeight // 告诉插件按撑开后的总高度来拍
+    }).then(canvas => {
+        // 🌟 截图完成后：瞬间把样式恢复原状，不影响学员继续滑动做题
+        content.style.overflow = originalOverflow;
+        content.style.height = originalHeight;
+        
+        // 恢复按钮显示
+        buttons.forEach(btn => btn.style.display = 'inline-block');
+        
+        // 触发自动下载图片
+        let link = document.createElement('a');
+        link.download = '德语语法自测_完整错题本.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+    });
+}
+</script>
+
+</body>

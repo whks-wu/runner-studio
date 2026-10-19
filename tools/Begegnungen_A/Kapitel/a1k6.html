@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>A1+ Kapitel 6 - 互动语法</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- 侧边栏导航（高亮当前章节） -->
+    <div class="sidebar">
+        <h2>🇩🇪 Begegnungen A1+</h2>
+        <a href="../index.html" class="nav-item">🏠 返回课程主页</a>
+        <a href="a1k1.html" class="nav-item">📍 Kapitel 1: Guten Tag</a>
+        <a href="a1k2.html" class="nav-item">📍 Kapitel 2: Erste Kontake am Arbeitsplatz</a>
+        <a href="a1k3.html" class="nav-item">📍 Kapitel 3: Unterwegs in München</a>
+        <a href="a1k4.html" class="nav-item">📍 Kapitel 4: Essen und Trinken </a>
+        <a href="a1k5.html" class="nav-item">📍 Kapitel 5: Alltag</a>
+        <a href="a1k6.html" class="nav-item active">📍 Kapitel 6: Reisen</a>
+        <a href="a1k7.html" class="nav-item">📍 Kapitel 7: Wohnen</a>
+        <a href="a1k8.html" class="nav-item">📍 Kapitel 8: Begegnungen und Ereignisse</a>
+    </div>
+
+    <!-- 主内容 -->
+    <div class="main-content">
+            <h1>A1+ Kapitel 6：连词、情态动词 wollen、第三格和阳性弱变化名词</h1>
+
+            <!-- 1. 不影响语序的连词 (Konjunktionen) -->
+            <div class="card">
+                <h3>🧩 不影响语序的并列连词 (Konjunktionen)</h3>
+                <p style="color: #7f8c8d; font-size: 0.9em;">💡 提示：此类连词占据第 0 位（不改变句子成分在句中的位置）。点击方块查看例句：</p>
+                
+                <div class="vocab-list-box">
+                    <ul>
+                        <li><strong>denn (因为)：</strong> Ich lerne Deutsch, <span class="blur-text" onclick="this.classList.toggle('revealed')">denn ich lebe in Deutschland.</span> (因为我住在德国。)</li>
+                        <li><strong>aber (但是)：</strong> Er ist müde, <span class="blur-text" onclick="this.classList.toggle('revealed')">aber er arbeitet weiter.</span> (他很累，但他继续工作。)</li>
+                        <li><strong>sondern (而是)：</strong> Das ist nicht blau, <span class="blur-text" onclick="this.classList.toggle('revealed')">sondern grün.</span> (这不是蓝色的，而是绿色的。)</li>
+                        <li><strong>oder (或者)：</strong> Trinkst du Kaffee <span class="blur-text" onclick="this.classList.toggle('revealed')">oder Tee?</span> (你喝咖啡还是茶？)</li>
+                        <li><strong>und (和/并) & wollen (情态动词)：</strong> Ich spiele Gitarre, <span class="blur-text" onclick="this.classList.toggle('revealed')">und ich will gut singen.</span> (我弹吉他，并且我想唱好歌。)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2. 情态动词 wollen -->
+            <div class="card" id="quiz-k6-wollen">
+                <h3>🧩 情态动词 wollen (强烈的愿望)</h3>
+                <p style="color: #7f8c8d; font-size: 0.9em;">💡 提示：wollen 表示非常坚定的意愿。请填写其现在时变位：</p>
+                <table>
+                    <tr><th>人称 (Person)</th><th>wollen 变位</th></tr>
+                    <tr><td>ich</td><td><input type="text" class="quiz-input" data-answer="will"></td></tr>
+                    <tr><td>du</td><td><input type="text" class="quiz-input" data-answer="willst"></td></tr>
+                    <tr><td>sie / er / es</td><td><input type="text" class="quiz-input" data-answer="will"></td></tr>
+                    <tr><td>wir</td><td><input type="text" class="quiz-input" data-answer="wollen"></td></tr>
+                    <tr><td>ihr</td><td><input type="text" class="quiz-input" data-answer="wollt"></td></tr>
+                    <tr><td>sie / Sie</td><td><input type="text" class="quiz-input" data-answer="wollen"></td></tr>
+                </table>
+                <div class="btn-group">
+                    <button class="btn-check" onclick="checkAnswers('quiz-k6-wollen')">✅ 提交批改</button>
+                    <button class="btn-show" onclick="showAnswers('quiz-k6-wollen')">👀 揭晓答案</button>
+                </div>
+            </div>
+
+            <!-- 3. 接第三格的动词 (Verben mit Dativ) -->
+            <div class="card">
+                <h3>🎯 接第三格宾语的动词 (Verben mit Dativ)</h3>
+                <div style="background-color: #F8FAFC; padding: 12px; border-left: 4px solid var(--primary); border-radius: 4px; margin-bottom: 15px;">
+                    <p style="margin: 0; font-size: 1.05em; color: #2C3E50;">
+                        <strong>核心常考动词：</strong> gefallen, helfen, passen, gehören, stehen, danken, schmecken 等。
+                    </p>
+                </div>
+                <div class="vocab-list-box">
+                    <p><strong>经典例句解析：</strong></p>
+                    <p style="background: #fff; padding: 10px; border-radius: 6px; border: 1px solid #E0E6ED; font-size: 1.05em;">
+                        Die Jacke <strong style="color: var(--primary);">gefällt</strong> <strong style="color: var(--wrong);">mir</strong>.<br>
+                        <span style="font-size: 0.85em; color: #7f8c8d; font-weight: normal;">(Die Jacke = N. 第一格主语； mir = D. 第三格宾语，意为：这件夹克让我很喜欢/合我心意。)</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 4. 人称代词第三格变格 -->
+            <div class="card" id="quiz-k6-pers-dat">
+                <h3>🧩 人称代词第三格形式 (Personalpronomen im Dativ)</h3>
+                <table>
+                    <tr><th>人称</th><th>Nominativ (第一格)</th><th>Dativ (第三格互动填空)</th></tr>
+                    <tr><td>我 (ich)</td><td>ich</td><td><input type="text" class="quiz-input" data-answer="mir"></td></tr>
+                    <tr><td>你 (du)</td><td>du</td><td><input type="text" class="quiz-input" data-answer="dir"></td></tr>
+                    <tr><td>她 (sie)</td><td>sie</td><td><input type="text" class="quiz-input" data-answer="ihr"></td></tr>
+                    <tr><td>他 (er)</td><td>er</td><td><input type="text" class="quiz-input" data-answer="ihm"></td></tr>
+                    <tr><td>它 (es)</td><td>es</td><td><input type="text" class="quiz-input" data-answer="ihm"></td></tr>
+                    <tr><td>我们 (wir)</td><td>wir</td><td><input type="text" class="quiz-input" data-answer="uns"></td></tr>
+                    <tr><td>你们 (ihr)</td><td>ihr</td><td><input type="text" class="quiz-input" data-answer="euch"></td></tr>
+                    <tr><td>他们/您 (sie/Sie)</td><td>sie / Sie</td><td><input type="text" class="quiz-input" data-answer="ihnen / Ihnen"></td></tr>
+                </table>
+                <div class="btn-group">
+                    <button class="btn-check" onclick="checkAnswers('quiz-k6-pers-dat')">✅ 提交批改</button>
+                    <button class="btn-show" onclick="showAnswers('quiz-k6-pers-dat')">👀 揭晓答案</button>
+                </div>
+            </div>
+
+            <!-- 5. 形容词性物主代词第三格变化 -->
+            <div class="card">
+                <h3>🧩 形容词性物主代词第三格变化 (Possessivartikel im Dativ)</h3>
+                <p style="color: #7f8c8d; font-size: 0.9em;">💡 提示：物主代词在第三格时，阳性和中性词尾为 <strong>-em</strong>，阴性为 <strong>-er</strong>，复数名词词尾为 <strong>-en</strong> 并在名词后加 -n。</p>
+                <table>
+                    <tr><th>人称 / 所有者</th><th>阳性 (maskulin)</th><th>中性 (neutrum)</th><th>阴性 (feminin)</th><th>复数 (Plural)</th></tr>
+                    <tr><td>我的 (mein-)</td><td>meinem</td><td>meinem</td><td>meiner</td><td>meinen (+n)</td></tr>
+                    <tr><td>你的 (dein-)</td><td>deinem</td><td>deinem</td><td>deiner</td><td>deinen (+n)</td></tr>
+                    <tr><td>她的/他们的 (ihr-)</td><td>ihrem</td><td>ihrem</td><td>ihrer</td><td>ihren (+n)</td></tr>
+                    <tr><td>他的/它的 (sein-)</td><td>seinem</td><td>seinem</td><td>seiner</td><td>seinen (+n)</td></tr>
+                    <tr><td>我们的 (unser-)</td><td>unserem</td><td>unserem</td><td>unserer</td><td>unseren (+n)</td></tr>
+                </table>
+            </div>
+
+                    <!-- 6. 阳性弱变化名词 -->
+    <div class="card" id="quiz-k6-n-deklination">
+        <h3>🧩 阳性弱变化名词 (N-Deklination) 与随堂练习</h3>
+        <div style="background-color: #F8FAFC; padding: 12px; border-left: 4px solid var(--primary); border-radius: 4px; margin-bottom: 15px;">
+            <p style="margin: 0; font-size: 1.05em; color: #2C3E50;">
+                <strong>💡 核心特点：</strong>阳性弱变化名词在<strong>第二、三、第四格</strong>的单数形式中，词尾均需加上 <strong style="color: var(--wrong);">-n</strong> 或 <strong style="color: var(--wrong);">-en</strong>（第一格保持原形不变）。
+            </p>
+        </div>
+
+        <!-- 变格完整表格 (高亮词尾) -->
+        <table>
+            <tr>
+                <th width="33%">第一格 (Nominativ)</th>
+                <th width="33%">第四格 (Akkusativ)</th>
+                <th width="33%">第三格 (Dativ)</th>
+            </tr>
+            <tr>
+                <td>der/ein Polizist</td>
+                <td>den/einen Polizist<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+                <td>dem/einem Polizist<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+            </tr>
+            <tr>
+                <td>der/ein Pessimist</td>
+                <td>den/einen Pessimist<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+                <td>dem/einem Pessimist<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+            </tr>
+            <tr>
+                <td>der/ein Optimist</td>
+                <td>den/einen Optimist<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+                <td>dem/einem Optimist<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+            </tr>
+            <tr>
+                <td>der/ein/mein Student</td>
+                <td>den/einen/meinen Student<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+                <td>dem/einem/meinem Student<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+            </tr>
+            <tr>
+                <td>der/ein Assistent</td>
+                <td>den/einen Assistent<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+                <td>dem/einem Assistent<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+            </tr>
+            <tr>
+                <td>der/ein Dozent</td>
+                <td>den/einen Dozent<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+                <td>dem/einem Dozent<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+            </tr>
+            <tr>
+                <td>der/ein/mein Junge</td>
+                <td>den/einen/meinen Jung<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+                <td>dem/einem/meinem Jung<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+            </tr>
+            <tr>
+                <td>der/ein/mein Kollege</td>
+                <td>den/einen/meinen Kolleg<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+                <td>dem/einem/meinem Kolleg<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+            </tr>
+            <tr>
+                <td>der/ein Chinese</td>
+                <td>den/einen Chines<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+                <td>dem/einem Chines<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+            </tr>
+            <tr>
+                <td>der/ein/mein Herr</td>
+                <td>den/einen/meinen Herr<span style="color: var(--wrong); font-weight: bold;">n</span></td>
+                <td>dem/einem/meinem Herr<span style="color: var(--wrong); font-weight: bold;">n</span></td>
+            </tr>
+            <tr>
+                <td>der/ein/mein Nachbar</td>
+                <td>den/einen/meinen Nachbar<span style="color: var(--wrong); font-weight: bold;">n</span></td>
+                <td>dem/einem/meinem Nachbar<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+            </tr>
+            <tr>
+                <td>der/ein Mensch</td>
+                <td>den/einen Mensch<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+                <td>dem/einem Mensch<span style="color: var(--wrong); font-weight: bold;">en</span></td>
+            </tr>
+        </table>
+
+        <div style="margin: 25px 0; border-top: 1px dashed #cbd5e1;"></div>
+
+        <!-- 练习题部分 -->
+        <h3 style="margin-top: 15px;">✍️ 随堂互动练习：弱变化名词变格实战</h3>
+        <p style="color: #7f8c8d; font-size: 0.9em;">💡 请根据句意及语法（判断第一、三、第四格）填写正确的名词形式：</p>
+        
+        <ul style="list-style: none; padding-left: 0; line-height: 2.8; font-size: 1em; color: #2C3E50;">
+            <li>a) Buchstabieren Sie bitte Ihren <input type="text" class="quiz-input" data-answer="Familiennamen" style="width: 130px;"> (Familienname)!</li>
+            <li>b) Wir kennen das Mädchen, aber nicht den <input type="text" class="quiz-input" data-answer="Jungen" style="width: 90px;"> (Junge).</li>
+            <li>c) Wie gefällt denn <input type="text" class="quiz-input" data-answer="dem Dozenten" style="width: 110px;"> (der Dozent) seine Arbeit?</li>
+            <li>d) Kennen Sie schon <input type="text" class="quiz-input" data-answer="Herrn Pöppelmann" style="width: 150px;"> (Herr Pöppelmann), den Betreuer von Wang Dali?</li>
+            <li>e) Kennen Sie schon unseren neuen <input type="text" class="quiz-input" data-answer="Nachbarn" style="width: 90px;"> (Nachbar)?</li>
+            <li>f) Ich empfehle <input type="text" class="quiz-input" data-answer="meinem Studenten" style="width: 130px;"> (mein Student) ein gutes Buch.</li>
+            <li>g) Monika gratuliert <input type="text" class="quiz-input" data-answer="ihrem Kollegen" style="width: 120px;"> (ihr Kollege) zum Geburtstag.</li>
+            <li>h) Das Abendessen schmeckt <input type="text" class="quiz-input" data-answer="dem Franzosen" style="width: 120px;"> (der Franzose) sehr.</li>
+        </ul>
+
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswers('quiz-k6-n-deklination')">✅ 提交练习批改</button>
+            <button class="btn-show" onclick="showAnswers('quiz-k6-n-deklination')">👀 揭晓练习答案</button>
+        </div>
+    </div>
+
+
+
+            <!-- 7. 指示代词 welch- 与 dies- -->
+            <div class="card">
+                <h3>🧩 指示代词 welch- 与 dies-</h3>
+                <div style="background-color: #F8FAFC; padding: 12px; border-left: 4px solid var(--accent); border-radius: 4px; margin-bottom: 15px;">
+                    <p style="margin: 0; font-size: 1.05em; color: #2C3E50;">
+                        <strong>💡 核心语法类比：</strong> <strong>welch-</strong> 和 <strong>dies-</strong> 的词尾变化规则与<strong>定冠词 (der/die/das)</strong> 完全相同！
+                    </p>
+                </div>
+                <div class="vocab-list-box">
+                    <ul>
+                        <li><strong>welche / diese</strong> (阴性第一格/第四格，及复数)</li>
+                        <li><strong>welcher / dieser</strong> (阳性第一格)</li>
+                        <li><strong>welches / dieses</strong> (中性第一格/第四格)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 8. 方位介词 (Präpositionen für Orte) -->
+            <div class="card">
+                <h3>🗺️ 方位介词用法与动态去向 (Präpositionen)</h3>
+                <div class="vocab-list-box">
+                    <p><strong>动态去向 (以 fahren 为例)：</strong></p>
+                    <ul>
+                        <li><strong>nach：</strong> 用于<strong>无冠词的国家</strong>、<strong>城市</strong>和<strong>大洲</strong>。 ➡️ 例句：Ich fahre <span class="blur-text" onclick="this.classList.toggle('revealed')">nach Deutschland.</span> (我去德国。)</li>
+                        <li><strong>in (+ 第四格)：</strong> 用于<strong>有冠词的国家</strong>。 ➡️ 例句：Ich fahre <span class="blur-text" onclick="this.classList.toggle('revealed')">in die Schweiz.</span> (我去瑞士。)</li>
+                        <li><strong>an (+ 第四格)：</strong> 用于<strong>水域边缘/海边</strong>。 ➡️ 例句：Wir fahren <span class="blur-text" onclick="this.classList.toggle('revealed')">an den See.</span> (我们去湖边。)</li>
+                        <li><strong>auf (+ 第四格)：</strong> 用于<strong>岛屿</strong>。 ➡️ 例句：Sie reist <span class="blur-text" onclick="this.classList.toggle('revealed')">auf die Insel.</span> (她去那座岛。)</li>
+                        <li><strong>zu (+ 第三格)：</strong> 用于<strong>人或机构场所</strong>。 ➡️ 例句：Ich gehe <span class="blur-text" onclick="this.classList.toggle('revealed')">zu ihr / zu der Ärztin.</span> (我去找她/去看医生。)</li>
+                    </ul>
+                </div>
+            </div>
+
+                <!-- ========================================== -->
+                <!-- 模块：交际与词汇互动区 (Kapitel 6) -->
+                <!-- ========================================== -->
+    < class="vocab-section" id="k6-vocab">
+        <h3 class="vocab-title">💬 K6 交际与核心词汇 (Wetter, Kleidung & Bahnhof)</h3>
+
+        <!-- 第一部分：主题翻转卡 (严格要求：4张，包含天气、买衣物、交通工具) -->
+        <p><strong>1. 主题情景会话 —— 点击卡片翻转 (Das Wetter, Kleidung, Verkehrsmittel)</strong></p>
+        <div class="flashcard-grid">
+            <!-- 卡片1：天气 (Das Wetter) -->
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="font-size: 0.9em;">Die Temperatur liegt bei 33 Grad.</div>
+                    <div class="flip-card-back">气温在33度左右。</div>
+                </div>
+            </div>
+            <!-- 卡片2：买衣物 (Kleidung kaufen) -->
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="font-size: 0.9em;">Ich hätte gern einen Pullover.</div>
+                    <div class="flip-card-back">我想要一件套头衫。</div>
+                </div>
+            </div>
+            <!-- 卡片3：交通工具 (Verkehrsmittel) -->
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="font-size: 0.9em;">Ich fahre mit dem Zug / der Bahn.</div>
+                    <div class="flip-card-back">我坐火车/地铁出行。</div>
+                </div>
+            </div>
+            <!-- 卡片4：火车站 (Auf dem Bahnhof) -->
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="font-size: 0.85em;">Von welchem Gleis fährt der Zug?</div>
+                    <div class="flip-card-back">火车从哪个站台发车？</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第二部分：天气描述 (Das Wetter) -->
+        <div class="vocab-list-box" style="margin-top: 15px;">
+            <p><strong>☀️ 天气描述 (Das Wetter) —— 点击阴影查看：</strong></p>
+            <ul>
+                <li>下雪/下雨：Es <span class="blur-text" onclick="this.classList.toggle('revealed')">schneit</span>. / Es regnet. (下雪了。/ 下雨了。)</li>
+                <li>冷与热：Es ist kalt. / Es ist warm. Es ist <span class="blur-text" onclick="this.classList.toggle('revealed')">heiß</span>. (很冷。/ 很暖和。很热。)</li>
+                <li>晴天与阳光：Es ist sonnig. / Die Sonne <span class="blur-text" onclick="this.classList.toggle('revealed')">scheint</span>. (天气晴朗。/ 阳光明媚。)</li>
+            </ul>
+        </div>
+
+        <!-- 第三部分：买衣服与评价 (Kleidung kaufen) -->
+        <div class="vocab-list-box" style="margin-top: 25px;">
+            <p><strong>👗 选购衣物 (Kleidung kaufen) —— 点击阴影查看：</strong></p>
+            <ul>
+                <li>试穿衣服：Kann ich den Pullover einmal <span class="blur-text" onclick="this.classList.toggle('revealed')">anprobieren</span>? (我可以试穿一下这件毛衣吗？)</li>
+                <li>询问看法：Was meinen Sie? Steht mir der <span class="blur-text" onclick="this.classList.toggle('revealed')">Anzug</span>? (您觉得呢？这套西装适合我吗？)</li>
+                <li>完美适合：Er steht Ihnen <span class="blur-text" onclick="this.classList.toggle('revealed')">ausgezeichnet</span>. (它非常适合您/穿在您身上极好。)</li>
+                <li>不合脚：Die Schuhe passen mir <span class="blur-text" onclick="this.classList.toggle('revealed')">nicht</span>. (这双鞋不适合我/不合脚。)</li>
+            </ul>
+        </div>
+
+        <!-- 第四部分：火车站出行 (Auf dem Bahnhof) -->
+        <div class="vocab-list-box" style="margin-top: 25px;">
+            <p><strong>🚂 火车站出行 (Auf dem Bahnhof) —— 点击阴影查看：</strong></p>
+            <ul>
+                <li>班次查询：Wann fährt ein Zug nach <span class="blur-text" onclick="this.classList.toggle('revealed')">Frankfurt</span>? (去法兰克福的火车什么时候开？)</li>
+                <li>换乘问题：Muss ich <span class="blur-text" onclick="this.classList.toggle('revealed')">umsteigen</span>? (我需要换乘吗？)</li>
+                <li>订座需求：Ich möchte einen <span class="blur-text" onclick="this.classList.toggle('revealed')">Sitzplatz</span> reservieren. (我想预订一个座位。)</li>
+            </ul>
+        </div>
+
+        <!-- 第五部分：核心动词词组 (Kleines Wörterbuch der Verben) -->
+        <div class="vocab-list-box" style="margin-top: 25px;">
+            <p><strong>3. 核心动词搭配提炼 (Kleines Wörterbuch der Verben)</strong></p>
+            <ul>
+                <li>👥 迎接客：die Gäste <span class="blur-text" onclick="this.classList.toggle('revealed')">abholen</span> (去接客/接机)</li>
+                <li>🧥 试穿毛衣：einen Pullover <span class="blur-text" onclick="this.classList.toggle('revealed')">anprobieren</span></li>
+                <li>🥶 感到寒冷：ich <span class="blur-text" onclick="this.classList.toggle('revealed')">friere</span>, du frierst</li>
+                <li>☂️ 遗忘雨伞：den Regenschirm zu Hause <span class="blur-text" onclick="this.classList.toggle('revealed')">lassen</span> (把伞落在家里)</li>
+                <li>🔄 退换鞋子：die neuen Schuhe <span class="blur-text" onclick="this.classList.toggle('revealed')">umtauschen</span></li>
+            </ul>
+        </div>
+        <div><!-- 💾 生成高清长图按钮 -->
+            <h1>
+
+            </h1>
+        <button class="no-print" onclick="saveAsImage()" style="background-color: #28C76F; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-left: 10px; font-size: 15px;">
+            📸 保存批改长图
+        </button>
+    </div>
+    </div>
+    <script src="../script.js"></script>
+</html>
+<script>
+function saveAsImage() {
+    // 1. 找到需要截图的主区域
+    const content = document.querySelector('.main-content');
+    
+    // 2. 临时隐藏所有带有 no-print 类的按钮
+    const buttons = document.querySelectorAll('.no-print');
+    buttons.forEach(btn => btn.style.display = 'none');
+
+    // 🌟 核心修复魔术：瞬间解除 .main-content 的内部高度限制
+    // 先记录它原本的样式
+    const originalOverflow = content.style.overflow;
+    const originalHeight = content.style.height;
+    
+    // 强行把它的高度撑到最大，让所有题目都露出来！
+    content.style.overflow = 'visible';
+    content.style.height = content.scrollHeight + 'px';
+
+    // 强制滚回最顶部
+    window.scrollTo(0, 0);
+
+    // 3. 开始生成长图
+    html2canvas(content, {
+        useCORS: true,
+        scale: 2,               // 高清放大
+        backgroundColor: '#f9f9f9', // 强制加上白/浅灰底色，防止背景变黑
+        y: 0,
+        windowHeight: content.scrollHeight // 告诉插件按撑开后的总高度来拍
+    }).then(canvas => {
+        // 🌟 截图完成后：瞬间把样式恢复原状，不影响学员继续滑动做题
+        content.style.overflow = originalOverflow;
+        content.style.height = originalHeight;
+        
+        // 恢复按钮显示
+        buttons.forEach(btn => btn.style.display = 'inline-block');
+        
+        // 触发自动下载图片
+        let link = document.createElement('a');
+        link.download = '德语语法自测_完整错题本.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+    });
+}
+</script>
+
+</body>

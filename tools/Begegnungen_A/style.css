@@ -1,0 +1,153 @@
+:root {
+    --primary: #1ABC9C;
+    --sidebar-bg: #2C3E50;
+    --bg-color: #F4F7F6;
+    --card-bg: #FFFFFF;
+    --correct: #27AE60;
+    --wrong: #E74C3C;
+    --accent: #F39C12;
+}
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; display: flex; background-color: var(--bg-color); color: #333; height: 100vh; }
+
+/* 侧边栏 */
+.sidebar { width: 260px; background-color: var(--sidebar-bg); color: white; padding: 20px 0; position: fixed; height: 100%; overflow-y: auto; }
+.sidebar h2 { text-align: center; color: var(--primary); font-size: 1.1em; border-bottom: 1px solid #34495E; padding-bottom: 15px; }
+.nav-item { display: block; padding: 12px 20px; color: #BDC3C7; text-decoration: none; border-left: 4px solid transparent; transition: 0.3s; border-bottom: 1px solid #34495E; font-size: 0.9em; }
+.nav-item:hover, .nav-item.active { background-color: #34495E; color: white; border-left: 4px solid var(--primary); }
+
+/* 主内容区 */
+.main-content { margin-left: 260px; padding: 40px; width: calc(100% - 260px); box-sizing: border-box; overflow-y: auto; height: 100vh; }
+.card { background: var(--card-bg); padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 30px; }
+h1 { color: #2C3E50; border-bottom: 3px solid var(--primary); padding-bottom: 10px; font-size: 1.6em; }
+
+/* 表格与输入框 */
+table { width: 100%; border-collapse: collapse; margin-top: 15px; background: #fff; }
+th, td { padding: 10px; text-align: center; border: 1px solid #E0E6ED; font-size: 0.95em; }
+th { background-color: #F8FAFC; color: #475569; }
+td:first-child { font-weight: bold; background-color: #F8FAFC; color: #34495E; }
+.quiz-input { width: 70px; padding: 6px; border: 2px dashed #CBD5E1; border-radius: 6px; text-align: center; outline: none; background-color: #F8FAFC; }
+.quiz-input.correct { border-color: var(--correct); background-color: #EAFAF1; color: var(--correct); font-weight: bold; }
+.quiz-input.wrong { border-color: var(--wrong); background-color: #FDEDEC; color: var(--wrong); }
+.btn-group { margin-top: 20px; display: flex; gap: 15px; justify-content: center; }
+button { padding: 8px 18px; border: none; border-radius: 8px; cursor: pointer; font-size: 0.95em; font-weight: bold; color: white; }
+.btn-check { background-color: var(--primary); }
+.btn-show { background-color: #95A5A6; }
+
+/* --- 模式 1：刮刮卡 (模糊遮挡) --- */
+.blur-text {
+background-color: #d1d1d1;
+color: transparent;
+border-radius: 4px;
+padding: 2px 8px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.blur-text.revealed { background-color: transparent; color: #E74C3C; font-weight: bold; }
+
+/* --- 模式 2：互动填空 --- */
+        .quiz-input {
+            width: 70px; padding: 6px; border: 2px dashed #CBD5E1; border-radius: 6px;
+            text-align: center; font-size: 1em; outline: none; background-color: #F8FAFC; transition: all 0.3s ease;
+        }
+        .quiz-input:focus { border-color: var(--primary); background-color: #fff; }
+        .quiz-input.correct { border-color: var(--correct); background-color: #EAFAF1; color: var(--correct); font-weight: bold; }
+        .quiz-input.wrong { border-color: var(--wrong); background-color: #FDEDEC; color: var(--wrong); }
+        
+        .btn-group { margin-top: 20px; display: flex; gap: 15px; justify-content: center;}
+        button {
+            padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer;
+            font-size: 1em; font-weight: bold; color: white; transition: opacity 0.3s;
+        }
+        button:hover { opacity: 0.8; }
+        .btn-check { background-color: var(--primary); }
+        .btn-show { background-color: #95A5A6; }
+
+        /* --- 模式 3：交际/词汇占位符 --- */
+        .vocab-section { background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); border: 2px dashed var(--primary); border-radius: 12px; padding: 30px; }
+        .vocab-title { color: var(--primary); font-size: 1.5em; margin-top: 0;}
+        .dev-placeholder { background: rgba(26, 188, 156, 0.1); padding: 30px; text-align: center; border-radius: 8px; color: #666; font-family: monospace; }
+        /* --- 模式 4：交际词汇翻转闪卡 --- */
+        .flashcard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .flip-card {
+            background-color: transparent;
+            height: 140px;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .flip-card.flipped .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            padding: 15px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .flip-card-front {
+            background-color: #fff;
+            border: 2px solid var(--primary);
+            color: #2C3E50;
+        }
+        .flip-card-back {
+            background-color: var(--primary);
+            color: white;
+            transform: rotateY(180deg);
+        }
+        .card-q { font-size: 1.1em; font-weight: bold; margin-bottom: 8px; }
+        .card-hint { font-size: 0.85em; color: #7f8c8d; }
+        .flip-card-back .card-a { font-weight: bold; margin-bottom: 5px; font-size: 1.05em; }
+        .flip-card-back .card-hint { color: #e0f2f1; }
+
+        .vocab-list-box {
+            background: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .vocab-list-box ul { padding-left: 20px; color: #444; }
+        .vocab-list-box li { margin-bottom: 10px; }
+        
+        /* 🔗 连线配对题样式 */
+        .match-container { display: flex; justify-content: space-between; gap: 20px; margin-top: 15px; }
+        .match-column { display: flex; flex-direction: column; gap: 15px; width: 48%; }
+        .match-item { padding: 15px; background: #F8FAFC; border: 2px solid #CBD5E1; border-radius: 8px; cursor: pointer; text-align: center; font-weight: bold; color: #34495E; transition: all 0.3s ease; user-select: none; }
+        .match-item:hover { border-color: var(--primary); box-shadow: 0 4px 10px rgba(26, 188, 156, 0.1); }
+        .match-item.selected { border-color: var(--primary); background: #E8F8F5; transform: scale(1.02); }
+        .match-item.matched { border-color: var(--correct); background: #EAFAF1; color: var(--correct); cursor: default; box-shadow: none; transform: scale(1); }
+        .match-item.wrong-shake { animation: shake 0.4s; border-color: var(--wrong); background: #FDEDEC; color: var(--wrong); }
+
+        /* 填空题列表样式 */
+        .fill-blank-list { list-style: none; padding: 0; line-height: 2.8; font-size: 1.05em; color: #2C3E50; }
+
+        /* 错误抖动动画 */
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        /* 默认隐藏题目主容器，等 JS 验证通过后再显示 */
+        .main-content {
+            display: none;
+        }

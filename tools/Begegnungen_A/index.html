@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>🌟 Begegnungen A1+ A2+ 德语自学自测</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 覆盖或补充主页专属网格与卡片样式 */
+        body { background-color: #EAEFEF; } /* 稍微加深整体背景，让卡片更立体 */
+        .dashboard { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+            gap: 25px; 
+            margin-top: 30px; 
+        }
+        .chapter-card { 
+            background: #FFFFFF; /* 比背景色稍深或保持纯白，配合更明显的阴影 */
+            background: linear-gradient(145deg, #ffffff, #f7f9f9); /* 微妙的渐变质感 */
+            padding: 25px; 
+            border-radius: 12px; 
+            /* 更立体、更深的阴影效果 */
+            box-shadow: 0 8px 25px rgba(44, 62, 80, 0.08), 0 3px 10px rgba(0, 0, 0, 0.04); 
+            border-top: 5px solid var(--primary); 
+            text-decoration: none; 
+            color: inherit; 
+            transition: all 0.3s ease; 
+            border: 1px solid #E2E8F0;
+        }
+        .chapter-card:hover { 
+            transform: translateY(-6px); 
+            box-shadow: 0 12px 30px rgba(44, 62, 80, 0.12), 0 5px 15px rgba(0, 0, 0, 0.06);
+            border-color: var(--primary);
+        }
+        .chapter-card h3 { 
+            color: var(--primary); 
+            margin-top: 0; 
+            font-size: 1.2em;
+        }
+        .chapter-card p {
+            color: #64748B;
+            font-size: 0.95em;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content" style="margin-left: 0; width: 100%; max-width: 1000px; margin: 0 auto; padding: 20px; box-sizing: border-box;">
+        
+    <!-- 修改了 h1 标签，加入 flex 布局让图案和文字居中对齐 -->
+    <h1 style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 30px;">
+        
+        <!-- 这里的 src="logo.png" 就是你的图案 -->
+        <img src="img/logo.png" alt="Logo" style="height: 50px; width: auto; border-radius: 8px;">
+        
+        <span>🇩🇪 Begegnungen A1+ A2+ 互动语法与词汇自学自测系统</span>
+    </h1>
+    <h3><a href="https://www.runnerstudio.top" class="nav-item" style="color: #2c3e50; font-weight: bold; text-decoration: none; background: none; padding: 0;">
+    🏠 返回工作室官网
+</a>
+    </h3>
+
+        <p>欢迎来到数字互动笔记主控台。请选择你要学习的章节：</p>
+        
+        <!-- A1+ 阶段章节 -->
+        <section style="margin-top: 25px; margin-bottom: 35px;">
+            <h2 style="color: #2C3E50; border-bottom: 2px solid #3498DB; padding-bottom: 8px; margin-bottom: 20px; font-size: 1.4em;">
+                📘 A1+ 基础阶段课程
+            </h2>
+            <div class="dashboard">
+                <a href="Kapitel/a1k1.html" class="chapter-card">
+                    <h3>Kapitel 1</h3>
+                    <p>基础起步、人称代词与自我介绍</p>
+                </a>
+                <a href="Kapitel/a1k2.html" class="chapter-card">
+                    <h3>Kapitel 2</h3>
+                    <p>否定与方位介词、办公日常</p>
+                </a>
+                <a href="Kapitel/a1k3.html" class="chapter-card">
+                    <h3>Kapitel 3</h3>
+                    <p>酒店住宿、形容词变格与观光</p>
+                </a>
+                <a href="Kapitel/a1k4.html" class="chapter-card">
+                    <h3>Kapitel 4</h3>
+                    <p>餐饮、购物与过去式 (Präteritum)</p>
+                </a>
+                <a href="Kapitel/a1k5.html" class="chapter-card">
+                    <h3>Kapitel 5</h3>
+                    <p>日常生活、现在完成时与预约</p>
+                </a>
+                <a href="Kapitel/a1k6.html" class="chapter-card">
+                    <h3>Kapitel 6</h3>
+                    <p>天气、衣物与火车站出行</p>
+                </a>
+                <a href="Kapitel/a1k7.html" class="chapter-card">
+                    <h3>Kapitel 7</h3>
+                    <p>住房、第三格名词组与路线指引</p>
+                </a>
+                <a href="Kapitel/a1k8.html" class="chapter-card">
+                    <h3>Kapitel 8</h3>
+                    <p>祝愿、身体部位与情态过去式</p>
+                </a>
+                <a href="Kapitel/a1test.html" class="chapter-card">
+                    <h3></h3>
+                    <p>祝愿、身体部位与情态过去式</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- A2+ 阶段章节 -->
+        <section style="margin-top: 25px; margin-bottom: 35px;">
+            <h2 style="color: #2C3E50; border-bottom: 2px solid #E67E22; padding-bottom: 8px; margin-bottom: 20px; font-size: 1.4em;">
+                📙 A2+ 进阶阶段课程
+            </h2>
+            <div class="dashboard">
+                <a href="Kapitel/a2k1.html" class="chapter-card">
+                    <h3>Kapitel 1</h3>
+                    <p>自我介绍、过去分词复习、反身动词与第二格</p>
+                </a>
+                <a href="Kapitel/a2k2.html" class="chapter-card">
+                    <h3>Kapitel 2</h3>
+                    <p>爱好和业余时间、否定</p>
+                </a>
+                <a href="Kapitel/a2k3.html" class="chapter-card">
+                    <h3>Kapitel 3</h3>
+                    <p>消费、主从复合句和第二虚拟式</p>
+                </a>
+                <a href="Kapitel/a2k4.html" class="chapter-card">
+                    <h3>Kapitel 4</h3>
+                    <p>工作、序数词、代副词和从句</p>
+                </a>
+                <a href="Kapitel/a2k5.html" class="chapter-card">
+                    <h3>Kapitel 5</h3>
+                    <p>度假、描述路线和形容词变格</p>
+                </a>
+                <a href="Kapitel/a2k6.html" class="chapter-card">
+                    <h3>Kapitel 6</h3>
+                    <p>人与动物、最高级和关系从句</p>
+                </a>
+                <a href="Kapitel/a2k7.html" class="chapter-card">
+                    <h3>Kapitel 7</h3>
+                    <p>居住和饮食、静三动四和带zu不定式</p>
+                </a>
+                <a href="Kapitel/a2k8.html" class="chapter-card">
+                    <h3>Kapitel 8</h3>
+                    <p>政治和科技、被动态和目的从句</p>
+                </a>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

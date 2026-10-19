@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>A2+ Kapitel 3 - 互动语法</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- 侧边栏导航（高亮当前章节） -->
+    <div class="sidebar">
+        <h2>🇩🇪 Begegnungen A2+</h2>
+        <a href="../index.html" class="nav-item">🏠 返回课程主页</a>
+        <a href="a2k1.html" class="nav-item">📍 Kapitel 1: Ausbildung und Tätigkeiten</a>
+        <a href="a2k2.html" class="nav-item">📍 Kapitel 2: Hobbys und Freizeit</a>
+        <a href="a2k3.html" class="nav-item active">📍 Kapitel 3: Geld und Konsum</a>
+        <a href="a2k4.html" class="nav-item">📍 Kapitel 4: Arbeit und Beruf</a>
+        <a href="a2k5.html" class="nav-item">📍 Kapitel 5: Urlaub und Reisen</a>
+        <a href="a2k6.html" class="nav-item">📍 Kapitel 6: Tiere und Menschen</a>
+        <a href="a2k7.html" class="nav-item">📍 Kapitel 7: Wohnen und Essen</a>
+        <a href="a2k8.html" class="nav-item">📍 Kapitel 8: Politik und Technik </a>
+    </div>
+
+    <!-- 主内容 -->
+    <div class="main-content">
+        <h1 id="k3">A2+ Kapitel 3：疑问代词、主从复合句、接第三格与第四格宾语的动词、第二虚拟式</h1>
+
+        <!-- ========================================== -->
+        <!-- 1. Welcher/Welche/Welches vs. Was für ein -->
+        <!-- ========================================== -->
+        <div class="card" id="quiz-a2k2-fragewoerter">
+            <h3>❓ 1. 疑问代词辨析：Welcher...? vs. Was für ein...?</h3>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
+                <div style="flex: 1; min-width: 250px; background: #F8FAFC; padding: 12px; border-radius: 6px; border: 1px solid #E2E8F0;">
+                    <h5 style="margin: 0 0 8px 0; color: #0284C7; font-size: 1.05em;">🔹 Welcher / Welche / Welches ...? (哪一个...？)</h5>
+                    <p style="font-size: 0.9em; color: #475569; margin: 0 0 8px 0;">用于在<strong>具体的、已知的选项</strong>中做出选择 (Entscheidung zwischen konkreten Möglichkeiten)。</p>
+                    <ul style="font-size: 0.95em; padding-left: 18px; margin: 0; line-height: 1.6;">
+                        <li><strong>Frage:</strong> <em>Welchen</em> Pullover möchtest du? (你想要哪件毛衣？- 从面前的几件中选)</li>
+                        <li><strong>Antwort:</strong> <em>Den</em> roten (Pullover). / <em>Diesen.</em> (这件红色的。/ 这件。)</li>
+                    </ul>
+                </div>
+                
+                <div style="flex: 1; min-width: 250px; background: #F8FAFC; padding: 12px; border-radius: 6px; border: 1px solid #E2E8F0;">
+                    <h5 style="margin: 0 0 8px 0; color: #D97706; font-size: 1.05em;">🔸 Was für ein(e) ...? (什么样的...？)</h5>
+                    <p style="font-size: 0.9em; color: #475569; margin: 0 0 8px 0;">用于询问<strong>一般的属性、质量或特征</strong> (Entscheidung zwischen allgemeinen Möglichkeiten)。</p>
+                    <ul style="font-size: 0.95em; padding-left: 18px; margin: 0; line-height: 1.6;">
+                        <li><strong>Frage:</strong> <em>Was für einen</em> Pullover möchtest du? (你想要什么样/什么材质的毛衣？)</li>
+                        <li><strong>Antwort:</strong> <em>Einen</em> (Pullover) aus Baumwolle. (一件纯棉的。)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p style="color: #7f8c8d; font-size: 0.9em; margin-bottom: 10px;">✍️ <strong>随堂互动：填入 Welcher/Welchen 还是 Was für ein/einen</strong></p>
+            <ul style="list-style: none; padding-left: 0; line-height: 2.8; font-size: 1.05em; color: #2C3E50;">
+                <li>1. (面对三辆车) <input type="text" class="quiz-input" data-answer="Welches" style="width: 80px;"> Auto gehört dir? – Das blaue dort.</li>
+                <li>2. (询问购车意向) <input type="text" class="quiz-input" data-answer="Was für ein" style="width: 100px;"> Auto möchtest du kaufen? – Ein schnelles Sportauto.</li>
+                <li>3. (第四格，阳性) <input type="text" class="quiz-input" data-answer="Welchen" style="width: 80px;"> Film hast du gestern gesehen? – Den neuen James Bond.</li>
+            </ul>
+            <div class="btn-group">
+                <button class="btn-check" onclick="checkAnswers('quiz-a2k2-fragewoerter')">✅ 提交批改</button>
+                <button class="btn-show" onclick="showAnswers('quiz-a2k2-fragewoerter')">👀 揭晓答案</button>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- 2. 主从复合句 (Haupt- und Nebensätze) -->
+        <!-- ========================================== -->
+        <div class="card" id="quiz-a2k2-nebensaetze">
+            <h3>🔗 2. 主从复合句：原因与条件 (Warum? Wann?)</h3>
+            
+            <h4 style="color: #0F172A; margin-bottom: 10px;">① 表示原因 (Kausalangaben: Warum?)：denn vs. weil</h4>
+            <div style="background-color: #F1F5F9; padding: 12px; border-radius: 6px; margin-bottom: 15px;">
+                <ul style="line-height: 1.8; margin: 0; padding-left: 20px;">
+                    <li><strong>denn (因为)：</strong> 连接两个主句。<strong>不占位</strong>，后面的句子保持正常语序（主语 + 动词）。<br>
+                    ➡️ Ich kaufe mein Brot im Supermarkt, <strong>denn</strong> <em>es</em> <em>ist</em> dort billiger.</li>
+                    <li><strong>weil (因为)：</strong> 引导从句。<strong>动词必须放到句末</strong>！<br>
+                    ➡️ Ich kaufe mein Brot im Supermarkt, <strong>weil</strong> es dort billiger <em>ist</em>.<br>
+                    ➡️ 从句也可以放在句首（此时从句整体占第1位，主句动词紧跟其后占第2位）：<br>
+                    <strong>Weil</strong> es im Supermarkt billiger <em>ist</em>, <em>kaufe</em> ich dort mein Brot.</li>
+                </ul>
+            </div>
+
+            <h4 style="color: #0F172A; margin-bottom: 10px;">② 表示条件 (Konditionalangaben: Wann?)：wenn</h4>
+            <div style="background-color: #F1F5F9; padding: 12px; border-radius: 6px; margin-bottom: 20px;">
+                <ul style="line-height: 1.8; margin: 0; padding-left: 20px;">
+                    <li><strong>wenn (如果/当...时)：</strong> 引导条件从句，<strong>动词放到句末</strong>。<br>
+                    ➡️ Ruf mich an, <strong>wenn</strong> du Geld <em>brauchst</em>.<br>
+                    ➡️ <strong>Wenn</strong> du Geld <em>brauchst</em>, <em>ruf</em> mich an. (从句前置，主句动词紧跟逗号)</li>
+                </ul>
+            </div>
+
+            <p style="color: #7f8c8d; font-size: 0.9em; margin-bottom: 10px;">✍️ <strong>随堂互动：根据连词填写正确的动词位置 (ist / habe)</strong></p>
+            <ul style="list-style: none; padding-left: 0; line-height: 2.8; font-size: 1.05em; color: #2C3E50;">
+                <li>1. Ich bleibe zu Hause, denn das Wetter <input type="text" class="quiz-input" data-answer="ist" style="width: 50px;"> schlecht.</li>
+                <li>2. Ich bleibe zu Hause, weil das Wetter schlecht <input type="text" class="quiz-input" data-answer="ist" style="width: 50px;">.</li>
+                <li>3. Wenn ich Zeit <input type="text" class="quiz-input" data-answer="habe" style="width: 60px;">, komme ich zu dir.</li>
+            </ul>
+            <div class="btn-group">
+                <button class="btn-check" onclick="checkAnswers('quiz-a2k2-nebensaetze')">✅ 提交批改</button>
+                <button class="btn-show" onclick="showAnswers('quiz-a2k2-nebensaetze')">👀 揭晓答案</button>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- 3. 第三格与第四格宾语动词 (Verben mit Dativ und Akkusativ) -->
+        <!-- ========================================== -->
+        <div class="card">
+            <h3>🎯 3. 动词支配的宾语：第四格与第三格 (Akkusativ & Dativ)</h3>
+            
+            <div style="overflow-x: auto; margin-bottom: 15px;">
+                <table style="width: 100%; min-width: 600px; text-align: left; line-height: 1.6; border-collapse: collapse;">
+                    <tr style="background-color: #FEF3C7; border-bottom: 2px solid #F59E0B;">
+                        <th width="30%">动词类别</th>
+                        <th width="35%">句型结构与提问</th>
+                        <th width="35%">常见动词</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #E2E8F0;">
+                            <strong style="color: #B45309;">仅带第四格 (Akkusativ)</strong>
+                        </td>
+                        <td style="padding: 10px; border-bottom: 1px solid #E2E8F0;">
+                            提问：Wen? Was? (谁？什么？)<br>
+                            <em>Ich brauche <strong>ein neues Auto</strong>.</em>
+                        </td>
+                        <td style="padding: 10px; border-bottom: 1px solid #E2E8F0; font-size: 0.9em;">
+                            brauchen, anrufen, besuchen, bezahlen, essen, finden, haben, hören, kennen, lieben, suchen, trinken...
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #E2E8F0;">
+                            <strong style="color: #B45309;">仅带第三格 (Dativ)</strong>
+                        </td>
+                        <td style="padding: 10px; border-bottom: 1px solid #E2E8F0;">
+                            提问：Wem? (对谁？)<br>
+                            <em>Die Jacke gefällt <strong>mir</strong>.</em>
+                        </td>
+                        <td style="padding: 10px; border-bottom: 1px solid #E2E8F0; font-size: 0.9em;">
+                            danken, gefallen, gehören, gratulieren, helfen, passen, schmecken (这些必须死记硬背！)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">
+                            <strong style="color: #B45309;">双宾语 (Dativ + Akkusativ)</strong>
+                        </td>
+                        <td style="padding: 10px;">
+                            提问：Wem? Was? (把什么给谁？)<br>
+                            (人三物四原则)<br>
+                            <em>Ich kaufe <strong>mir</strong> <strong>ein neues Kleid</strong>.</em>
+                        </td>
+                        <td style="padding: 10px; font-size: 0.9em;">
+                            bringen, geben, kaufen, schenken, schicken, schreiben, senden, zeigen
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- 4. 第二虚拟式 (Konjunktiv II) -->
+        <!-- ========================================== -->
+        <div class="card" id="quiz-a2k2-konjunktiv">
+            <h3>✨ 4. 第二虚拟式 (Konjunktiv II)：hätte, wäre, würde</h3>
+            
+            <div style="background-color: #F8FAFC; padding: 12px; border-left: 4px solid var(--primary); border-radius: 4px; margin-bottom: 15px;">
+                <p style="margin: 0; font-size: 1.05em; color: #2C3E50;">
+                    <strong>💡 核心概念：</strong> 德语中的第二虚拟式 (Konjunktiv II) 用于表达<strong>非真实的条件、愿望、礼貌的请求或建议</strong>。<br>
+                    它对应英语中的 "would, could, if I were" 等用法。
+                </p>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
+                <div style="flex: 1; min-width: 250px; background: #FEF2F2; padding: 12px; border-radius: 6px; border: 1px solid #FECACA;">
+                    <h5 style="margin: 0 0 8px 0; color: #B91C1C;">直陈式 (Indikativ - 现实)</h5>
+                    <p style="margin: 0; font-size: 0.9em; line-height: 1.6;">
+                        Ich <strong>habe</strong> kein Geld. (我没钱。)<br>
+                        Ich <strong>bin</strong> krank. (我生病了。)<br>
+                        Ich <strong>fahre</strong> nicht in den Urlaub. (我不去度假。)
+                    </p>
+                </div>
+                <div style="flex: 1; min-width: 250px; background: #ECFDF5; padding: 12px; border-radius: 6px; border: 1px solid #A7F3D0;">
+                    <h5 style="margin: 0 0 8px 0; color: #047857;">虚拟式 (Konjunktiv II - 非现实/愿望)</h5>
+                    <p style="margin: 0; font-size: 0.9em; line-height: 1.6;">
+                        Ich <strong>hätte</strong> gern Geld. (我希望能有钱。)<br>
+                        Ich <strong>wäre</strong> gern gesund. (我希望能健康。)<br>
+                        Ich <strong>würde</strong> gern in den Urlaub <strong>fahren</strong>. (我希望能去度假。)
+                    </p>
+                </div>
+            </div>
+
+            <h4 style="color: #0F172A; margin-bottom: 10px;">📋 Konjunktiv II 变位表</h4>
+            <div style="overflow-x: auto; margin-bottom: 15px;">
+                <table style="width: 100%; min-width: 500px; text-align: center; border-collapse: collapse;">
+                    <tr style="background-color: #F1F5F9;">
+                        <th></th>
+                        <th>ich / er/sie/es</th>
+                        <th>du</th>
+                        <th>wir / sie/Sie</th>
+                        <th>ihr</th>
+                    </tr>
+                    <tr>
+                        <td><strong>sein ➡️ wäre</strong></td>
+                        <td style="color: #D97706; font-weight: bold;">wäre</td>
+                        <td>wärst</td>
+                        <td>wären</td>
+                        <td>wärt</td>
+                    </tr>
+                    <tr>
+                        <td><strong>haben ➡️ hätte</strong></td>
+                        <td style="color: #D97706; font-weight: bold;">hätte</td>
+                        <td>hättest</td>
+                        <td>hätten</td>
+                        <td>hättet</td>
+                    </tr>
+                    <tr>
+                        <td><strong>(其他动词) ➡️ würde</strong></td>
+                        <td style="color: #D97706; font-weight: bold;">würde (+ Infinitiv)</td>
+                        <td>würdest</td>
+                        <td>würden</td>
+                        <td>würdet</td>
+                    </tr>
+                </table>
+            </div>
+
+            <p style="color: #7f8c8d; font-size: 0.9em; margin-bottom: 10px;">✍️ <strong>随堂互动：填入正确的 Konjunktiv II 形式 (hätte / wäre / würde)</strong></p>
+            <ul style="list-style: none; padding-left: 0; line-height: 2.8; font-size: 1.05em; color: #2C3E50;">
+                <li>1. Wenn ich im Lotto gewinnen <input type="text" class="quiz-input" data-answer="würde" style="width: 70px;">, <input type="text" class="quiz-input" data-answer="wäre" style="width: 60px;"> ich reich. (如果我中彩票了，我就会很富有。)</li>
+                <li>2. Ich <input type="text" class="quiz-input" data-answer="hätte" style="width: 60px;"> gern eine Tasse Kaffee. (我想要一杯咖啡。 - 礼貌请求)</li>
+                <li>3. Es <input type="text" class="quiz-input" data-answer="wäre" style="width: 60px;"> gut, wenn du mehr Sport treiben <input type="text" class="quiz-input" data-answer="würdest" style="width: 80px;">. (如果你多做点运动就好了。 - 建议)</li>
+            </ul>
+            <div class="btn-group">
+                <button class="btn-check" onclick="checkAnswers('quiz-a2k2-konjunktiv')">✅ 提交批改</button>
+                <button class="btn-show" onclick="showAnswers('quiz-a2k2-konjunktiv')">👀 揭晓答案</button>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- 5. 不定冠词替代名词 (Unbestimmter Artikel ohne Nomen) -->
+        <!-- ========================================== -->
+        <div class="card" id="quiz-a2k2-pronomen">
+            <h3>🛒 5. 不定冠词单独使用 (Unbestimmter Artikel ohne Nomen)</h3>
+            
+            <p style="color: #475569; font-size: 0.95em; margin-bottom: 15px;">
+                💡 为了避免重复，我们可以用不定冠词（或否定词 kein）加上特定的词尾，来替代前面已经提到过的名词（相当于英语的 "one / ones"）。<br>
+                <strong>注意：</strong> 阳性第一格 (Nom.) 是 <strong>einer/keiner</strong>；中性第一/四格是 <strong>eins/keins</strong>；复数用 <strong>welche/keine</strong>。
+            </p>
+
+            <div style="overflow-x: auto; margin-bottom: 20px;">
+                <table style="width: 100%; min-width: 600px; text-align: left; line-height: 1.8;">
+                    <tr style="background-color: #F1F5F9;">
+                        <th width="15%">词性</th>
+                        <th width="35%">上文 (带有名词)</th>
+                        <th width="50%">替代表达 (无需重复名词)</th>
+                    </tr>
+                    <tr>
+                        <td><strong>阳性 (mask.)</strong></td>
+                        <td>Ich habe keinen Regenschirm (m.).</td>
+                        <td>
+                            Hier ist <strong>einer</strong>. (Nom.) <br>
+                            Ich habe <strong>einen</strong>. (Akk.)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>阴性 (fem.)</strong></td>
+                        <td>Ich habe keine Fotokamera (f.).</td>
+                        <td>
+                            Hier ist <strong>eine</strong>. (Nom.) <br>
+                            Ich habe <strong>eine</strong>. (Akk.)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>中性 (neut.)</strong></td>
+                        <td>Ich habe kein Handy (n.).</td>
+                        <td>
+                            Hier ist <strong>eins</strong>. (Nom.) <br>
+                            Ich habe <strong>eins</strong>. (Akk.)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>复数 (Plural)</strong></td>
+                        <td>Ich habe keine Socken (Pl.).</td>
+                        <td>
+                            Hier sind <strong>welche</strong>. (Nom.) <br>
+                            Ich kaufe <strong>welche</strong>. (Akk.)
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <p style="color: #7f8c8d; font-size: 0.9em; margin-bottom: 10px;">✍️ <strong>随堂互动：填入正确的代词 (einer, einen, eine, eins, welche)</strong></p>
+            <ul style="list-style: none; padding-left: 0; line-height: 2.8; font-size: 1.05em; color: #2C3E50;">
+                <li>1. Hast du einen Stift (m.) für mich? – Ja, hier auf dem Tisch liegt <input type="text" class="quiz-input" data-answer="einer" style="width: 60px;">. (第一格)</li>
+                <li>2. Brauchst du ein Auto (n.)? – Nein, ich habe schon <input type="text" class="quiz-input" data-answer="eins" style="width: 60px;">. (第四格)</li>
+                <li>3. Hast du Äpfel (Pl.) gekauft? – Ja, ich habe <input type="text" class="quiz-input" data-answer="welche" style="width: 70px;"> gekauft.</li>
+            </ul>
+            <div class="btn-group">
+                <button class="btn-check" onclick="checkAnswers('quiz-a2k2-pronomen')">✅ 提交批改</button>
+                <button class="btn-show" onclick="showAnswers('quiz-a2k2-pronomen')">👀 揭晓答案</button>
+            </div>
+        </div>
+        <!-- ========================================== -->
+        <!-- 模块：交际与词汇互动区 (Kapitel 2 - A2) -->
+        <!-- ========================================== -->
+        <div class="vocab-section" id="a2k2-vocab">
+            <h3 class="vocab-title">💬 A2-K2 交际与核心词汇 (Geld, Einkaufen & Verben)</h3>
+
+            <!-- 第一部分：核心交际短语翻转卡牌 -->
+            <p><strong>🗂️ 1. 金钱与购物核心表达 —— 点击卡片翻转记忆</strong></p>
+            <div class="flashcard-grid">
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="font-size: 0.9em;">Ich möchte ein Konto eröffnen.</div>
+                        <div class="flip-card-back">我想开一个账户。 🏦</div>
+                    </div>
+                </div>
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="font-size: 0.9em;">Kann ich mit Kreditkarte bezahlen?</div>
+                        <div class="flip-card-back">我可以用信用卡支付吗？ 💳</div>
+                    </div>
+                </div>
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="font-size: 0.9em;">Kann ich das mal anprobieren?</div>
+                        <div class="flip-card-back">我可以试穿一下这个吗？ 👕</div>
+                    </div>
+                </div>
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="font-size: 0.85em;">ein Produkt in Raten bezahlen</div>
+                        <div class="flip-card-back">分期付款买一件产品 📊</div>
+                    </div>
+                </div>
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="font-size: 0.9em;">Geld von einem Konto abheben</div>
+                        <div class="flip-card-back">从账户里取钱 🏧</div>
+                    </div>
+                </div>
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="font-size: 0.9em;">im Lotto viel Geld gewinnen</div>
+                        <div class="flip-card-back">中彩票赢很多钱 💰</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第二部分：主题词汇互动填空 -->
+            <div class="vocab-list-box" style="margin-top: 25px;">
+                <p><strong>🗣️ 2. 主题词汇搭配测试 (Einkaufen, Bank, Lotto)</strong><br>
+                <span style="font-size: 0.85em; color: #7f8c8d;">点击阴影处查看正确动词搭配。</span></p>
+                <ul style="line-height: 2.2;">
+                    <li><strong>🛍️ 购物</strong> Preise <span class="blur-text" onclick="this.classList.toggle('revealed')">vergleichen</span> (比较价格) / die Ware <span class="blur-text" onclick="this.classList.toggle('revealed')">prüfen</span> (检查商品) / die Ware <span class="blur-text" onclick="this.classList.toggle('revealed')">reklamieren</span> (投诉/退换商品)</li>
+                    <li><strong>🛒 在商店</strong> Kann ich Ihnen <span class="blur-text" onclick="this.classList.toggle('revealed')">helfen</span>? (我能帮您吗？) / ... passt mir <span class="blur-text" onclick="this.classList.toggle('revealed')">nicht</span>. (这不合适我。) / ... gefällt mir <span class="blur-text" onclick="this.classList.toggle('revealed')">nicht</span>. (我不喜欢这个。)</li>
+                    <li><strong>🏦 在银行 (Auf der Bank)</strong> ein Formular <span class="blur-text" onclick="this.classList.toggle('revealed')">ausfüllen</span> (填写表格) / auf ein Konto <span class="blur-text" onclick="this.classList.toggle('revealed')">einzahlen</span> (存钱到账户) / für soziale Zwecke <span class="blur-text" onclick="this.classList.toggle('revealed')">spenden</span> (为社会目的捐款)</li>
+                    <li><strong>🏧 ATM取款</strong> die Kontokarte <span class="blur-text" onclick="this.classList.toggle('revealed')">einführen</span> (插入银行卡) / die Geheimzahl <span class="blur-text" onclick="this.classList.toggle('revealed')">eingeben</span> (输入密码) / die Taste "Bestätigung" <span class="blur-text" onclick="this.classList.toggle('revealed')">drücken</span> (按“确认”键)</li>
+                </ul>
+            </div>
+
+            <!-- 第三部分：不规则与规则动词 (Verben) 变位 -->
+            <div class="card" id="quiz-a2k2-verben" style="margin-top: 25px;">
+                <h3>🔑 3. 核心动词变位大汇总 (Verben)</h3>
+                
+                <h4 style="color: #D97706; margin-bottom: 10px;">① 不规则动词 (Unregelmäßige Verben)</h4>
+                <div style="overflow-x: auto; margin-bottom: 20px;">
+                    <table style="width: 100%; min-width: 600px; text-align: left;">
+                        <tr style="background-color: #FEF3C7;">
+                            <th width="30%">原形 (Infinitiv)</th>
+                            <th width="20%">现在时 (Präsens) er</th>
+                            <th width="20%">过去时 (Präteritum) er</th>
+                            <th width="30%">现在完成时 (Perfekt) er</th>
+                        </tr>
+                        <tr><td>abheben (取钱)</td><td>hebt ab</td><td>hob ab</td><td>hat abgehoben</td></tr>
+                        <tr><td>betragen (总计)</td><td>beträgt</td><td>betrug</td><td>hat betragen</td></tr>
+                        <tr><td>entscheiden (决定)</td><td>entscheidet sich</td><td>entschied sich</td><td>hat sich entschieden</td></tr>
+                        <tr><td>gelten (被视为)</td><td>gilt</td><td>galt</td><td>hat gegolten</td></tr>
+                        <tr><td>nennen (命名/称呼)</td><td>nennt</td><td>nannte</td><td>hat genannt</td></tr>
+                        <tr><td>tun (做)</td><td>tut</td><td>tat</td><td>hat getan</td></tr>
+                        <tr><td>verbieten (禁止)</td><td>verbietet</td><td>verbot</td><td>hat verboten</td></tr>
+                        <tr><td>vergleichen (比较)</td><td>vergleicht</td><td>verglich</td><td>hat verglichen</td></tr>
+                    </table>
+                </div>
+
+                <h4 style="color: #059669; margin-bottom: 10px;">② 重要规则动词 (Regelmäßige Verben)</h4>
+                <div style="overflow-x: auto; margin-bottom: 20px;">
+                    <table style="width: 100%; min-width: 600px; text-align: left;">
+                        <tr style="background-color: #D1FAE5;">
+                            <th width="30%">原形 (Infinitiv)</th>
+                            <th width="20%">现在时 (Präsens) er</th>
+                            <th width="20%">过去时 (Präteritum) er</th>
+                            <th width="30%">现在完成时 (Perfekt) er</th>
+                        </tr>
+                        <tr><td>anprobieren (试穿)</td><td>probiert an</td><td>probierte an</td><td>hat anprobiert</td></tr>
+                        <tr><td>ausfüllen (填写)</td><td>füllt aus</td><td>füllte aus</td><td>hat ausgefüllt</td></tr>
+                        <tr><td>einzahlen (存钱)</td><td>zahlt ein</td><td>zahlte ein</td><td>hat eingezahlt</td></tr>
+                        <tr><td>eröffnen (开户)</td><td>eröffnet</td><td>eröffnete</td><td>hat eröffnet</td></tr>
+                        <tr><td>sparen (存钱/节省)</td><td>spart</td><td>sparte</td><td>hat gespart</td></tr>
+                        <tr><td>spenden (捐献)</td><td>spendet</td><td>spendete</td><td>hat gespendet</td></tr>
+                    </table>
+                </div>
+
+                <!-- 动词自测 -->
+                <p style="color: #7f8c8d; font-size: 0.9em; margin-bottom: 10px;">✍️ <strong>随堂自测：填写正确的现在完成时 (Perfekt) 形式</strong></p>
+                <ul style="list-style: none; padding-left: 0; line-height: 2.8;">
+                    <li>1. (abheben) Er <input type="text" class="quiz-input" data-answer="hat" style="width: 40px;"> gestern Geld <input type="text" class="quiz-input" data-answer="abgehoben" style="width: 90px;">.</li>
+                    <li>2. (vergleichen) Wir <input type="text" class="quiz-input" data-answer="haben" style="width: 55px;"> die Preise im Internet <input type="text" class="quiz-input" data-answer="verglichen" style="width: 90px;">.</li>
+                    <li>3. (ausfüllen) Ich <input type="text" class="quiz-input" data-answer="habe" style="width: 50px;"> das Formular <input type="text" class="quiz-input" data-answer="ausgefüllt" style="width: 90px;">.</li>
+                    <li>4. (sich entscheiden) Sie <input type="text" class="quiz-input" data-answer="hat" style="width: 40px;"> <input type="text" class="quiz-input" data-answer="sich" style="width: 40px;"> für dieses Auto <input type="text" class="quiz-input" data-answer="entschieden" style="width: 100px;">.</li>
+                </ul>
+                <div class="btn-group" style="margin-bottom: 25px;">
+                    <button class="btn-check" onclick="checkAnswers('quiz-a2k2-verben')">✅ 提交批改</button>
+                    <button class="btn-show" onclick="showAnswers('quiz-a2k2-verben')">👀 揭晓答案</button>
+                </div>
+            </div>
+        </div>
+<div><!-- 💾 生成高清长图按钮 -->
+            <h1>
+
+            </h1>
+        <button class="no-print" onclick="saveAsImage()" style="background-color: #28C76F; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-left: 10px; font-size: 15px;">
+            📸 保存批改长图
+        </button>
+    </div>
+    </div>
+    <script src="../script.js"></script>
+</html>
+<script>
+function saveAsImage() {
+    // 1. 找到需要截图的主区域
+    const content = document.querySelector('.main-content');
+    
+    // 2. 临时隐藏所有带有 no-print 类的按钮
+    const buttons = document.querySelectorAll('.no-print');
+    buttons.forEach(btn => btn.style.display = 'none');
+
+    // 🌟 核心修复魔术：瞬间解除 .main-content 的内部高度限制
+    // 先记录它原本的样式
+    const originalOverflow = content.style.overflow;
+    const originalHeight = content.style.height;
+    
+    // 强行把它的高度撑到最大，让所有题目都露出来！
+    content.style.overflow = 'visible';
+    content.style.height = content.scrollHeight + 'px';
+
+    // 强制滚回最顶部
+    window.scrollTo(0, 0);
+
+    // 3. 开始生成长图
+    html2canvas(content, {
+        useCORS: true,
+        scale: 2,               // 高清放大
+        backgroundColor: '#f9f9f9', // 强制加上白/浅灰底色，防止背景变黑
+        y: 0,
+        windowHeight: content.scrollHeight // 告诉插件按撑开后的总高度来拍
+    }).then(canvas => {
+        // 🌟 截图完成后：瞬间把样式恢复原状，不影响学员继续滑动做题
+        content.style.overflow = originalOverflow;
+        content.style.height = originalHeight;
+        
+        // 恢复按钮显示
+        buttons.forEach(btn => btn.style.display = 'inline-block');
+        
+        // 触发自动下载图片
+        let link = document.createElement('a');
+        link.download = '德语语法自测_完整错题本.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+    });
+}
+</script>
+
+</body>

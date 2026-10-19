@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>A1+ Kapitel 7 - 互动语法</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- 侧边栏导航（高亮当前章节） -->
+    <div class="sidebar">
+        <h2>🇩🇪 Begegnungen A1+</h2>
+        <a href="../index.html" class="nav-item">🏠 返回课程主页</a>
+        <a href="a1k1.html" class="nav-item">📍 Kapitel 1: Guten Tag</a>
+        <a href="a1k2.html" class="nav-item">📍 Kapitel 2: Erste Kontake am Arbeitsplatz</a>
+        <a href="a1k3.html" class="nav-item">📍 Kapitel 3: Unterwegs in München</a>
+        <a href="a1k4.html" class="nav-item">📍 Kapitel 4: Essen und Trinken </a>
+        <a href="a1k5.html" class="nav-item">📍 Kapitel 5: Alltag</a>
+        <a href="a1k6.html" class="nav-item ">📍 Kapitel 6: Reisen</a>
+        <a href="a1k7.html" class="nav-item active">📍 Kapitel 7: Wohnen</a>
+        <a href="a1k8.html" class="nav-item">📍 Kapitel 8: Begegnungen und Ereignisse</a>
+    </div>
+
+    <!-- 主内容 -->
+<div class="main-content">
+    <h1>A1+ Kapitel 7：第三格、方位介词与静三动四、情态动词 dürfen、比较级</h1>
+
+    <!-- 1. 第三格名词组与形容词词尾 -->
+    <div class="card" id="quiz-k7-dativ">
+        <h3>🧩 第三格名词组 (Die Nomengruppe im Dativ)</h3>
+        <div style="background-color: #F8FAFC; padding: 12px; border-left: 4px solid var(--primary); border-radius: 4px; margin-bottom: 15px;">
+            <p style="margin: 0; font-size: 1.05em; color: #2C3E50;">
+                <strong>💡 核心规则：</strong>在第三格中，阳性和中性冠词变为 <strong>dem / einem</strong>，阴性变为 <strong>der / einer</strong>，复数变为 <strong>den</strong> 且复数名词词尾加 <strong>-n</strong>。<strong>形容词在第三格中永远以 -en 结尾</strong>。
+            </p>
+        </div>
+
+        <table>
+            <tr>
+                <th width="20%">格 (Kasus)</th>
+                <th width="20%">feminin (阴性)</th>
+                <th width="20%">maskulin (阳性)</th>
+                <th width="20%">neutrum （中性）</th>
+                <th width="20%">Plural （复数）</th>
+            </tr>
+            <tr>
+                <td>Nominativ / Akkusativ</td>
+                <td>die Wand</td>
+                <td>der / den Tisch</td>
+                <td>das Sofa</td>
+                <td>die Stühle</td>
+                
+            </tr>
+            <tr>
+                <td>Dativ (第三格)</td>
+                <td>der / einer / weißen <input type="text" class="quiz-input" data-answer="Wand" style="width: 55px;"></td>
+                <td>dem / einem / großen <input type="text" class="quiz-input" data-answer="Tisch" style="width: 55px;"></td>
+                <td>dem / neuen <input type="text" class="quiz-input" data-answer="Sofa" style="width: 55px;"></td>
+                <td>den großen <input type="text" class="quiz-input" data-answer="Stühlen" style="width: 55px;">
+            </tr>
+        </table>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswers('quiz-k7-dativ')">✅ 提交批改</button>
+            <button class="btn-show" onclick="showAnswers('quiz-k7-dativ')">👀 揭晓答案</button>
+        </div>
+    </div>
+
+    <!-- 2. 方位介词与静三动四 -->
+    <div class="card" id="quiz-k7-wechselpraep">
+        <h3>🗺️ 方位介词与“静三动四”原则</h3>
+        <div class="vocab-list-box">
+            <p><strong>📍 核心区分规则：</strong></p>
+            <ul>
+                <li><strong>📍 静态 “在哪儿” (wo)：</strong> 表示静止的状态或位置（常配静态动词如 liegen, stehen），使用<strong>方位介词 + 第三格 (Dativ)</strong>。</li>
+                <li><strong>🏃 动态 “到哪儿” (wohin)：</strong> 表示动作的方向或去向（常配动态动词如 legen, stellen），使用<strong>方位介词 + 第四格 (Akkusativ)</strong>。</li>
+                <li><strong>“静三动四”双向介词：</strong> in, auf, an, über, neben, unter, zwischen, hinter, vor。</li>
+            </ul>
+        </div>
+
+        <div style="margin: 25px 0; border-top: 1px dashed #cbd5e1;"></div>
+
+        <!-- 静三动四 互动填空题 -->
+        <h3 style="margin-top: 15px;">✍️ 随堂互动练习：静三动四实战</h3>
+        <p style="color: #7f8c8d; font-size: 0.9em;">💡 请判断句子的动作是“静态(wo)”还是“动态(wohin)”，并填入正确的定冠词 (der/den/dem/die/das)：</p>
+        
+        <ul style="list-style: none; padding-left: 0; line-height: 2.8; font-size: 1em; color: #2C3E50;">
+            <li>1. 📍 (wo) Das Bild hängt an <input type="text" class="quiz-input" data-answer="der" style="width: 50px;"> (die) Wand. <span style="font-size: 0.85em; color: #7f8c8d;">(画挂在墙上 - 静态)</span></li>
+            <li>2. 🏃 (wohin) Ich hänge das Bild an <input type="text" class="quiz-input" data-answer="die" style="width: 50px;"> (die) Wand. <span style="font-size: 0.85em; color: #7f8c8d;">(我把画挂到墙上 - 动态)</span></li>
+            <li>3. 📍 (wo) Das Buch liegt auf <input type="text" class="quiz-input" data-answer="dem" style="width: 50px;"> (der) Tisch. <span style="font-size: 0.85em; color: #7f8c8d;">(书平放在桌子上 - 静态)</span></li>
+            <li>4. 🏃 (wohin) Ich lege das Buch auf <input type="text" class="quiz-input" data-answer="den" style="width: 50px;"> (der) Tisch. <span style="font-size: 0.85em; color: #7f8c8d;">(我把书放到桌子上 - 动态)</span></li>
+        </ul>
+
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswers('quiz-k7-wechselpraep')">✅ 提交批改</button>
+            <button class="btn-show" onclick="showAnswers('quiz-k7-wechselpraep')">👀 揭晓答案</button>
+        </div>
+    </div>
+
+    <!-- 3. 情态动词 dürfen (包含变位互动) -->
+    <div class="card" id="quiz-k7-duerfen">
+        <h3>🧩 情态动词 dürfen (允许/可以)</h3>
+        <div class="vocab-list-box" style="margin-bottom: 15px;">
+            <ul>
+                <li><strong>nicht dürfen：</strong> 表示禁止（不准、不允许）。</li>
+                <li><strong>礼貌请求：</strong> 用于委婉地询问Darf ich ... ... “我可以……吗？”。</li>
+            </ul>
+        </div>
+
+        <p style="color: #7f8c8d; font-size: 0.9em; margin-bottom: 10px;">✍️ <strong>随堂互动：dürfen 变位填空</strong></p>
+        <table>
+            <tr>
+                <th width="30%">人称 (Person)</th>
+                <th width="70%">dürfen 变位</th>
+            </tr>
+            <tr>
+                <td>ich</td>
+                <td><input type="text" class="quiz-input" data-answer="darf"></td>
+            </tr>
+            <tr>
+                <td>du</td>
+                <td><input type="text" class="quiz-input" data-answer="darfst"></td>
+            </tr>
+            <tr>
+                <td>sie / er / es</td>
+                <td><input type="text" class="quiz-input" data-answer="darf"></td>
+            </tr>
+            <tr>
+                <td>wir</td>
+                <td><input type="text" class="quiz-input" data-answer="dürfen"></td>
+            </tr>
+            <tr>
+                <td>ihr</td>
+                <td><input type="text" class="quiz-input" data-answer="dürft"></td>
+            </tr>
+            <tr>
+                <td>sie / Sie</td>
+                <td><input type="text" class="quiz-input" data-answer="dürfen"></td>
+            </tr>
+        </table>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswers('quiz-k7-duerfen')">✅ 提交批改</button>
+            <button class="btn-show" onclick="showAnswers('quiz-k7-duerfen')">👀 揭晓答案</button>
+        </div>
+    </div>
+
+    <!-- 4. 形容词比较级 Komparation der Adjektive -->
+    <div class="card">
+        <h3>📈 形容词比较级 (Komparation der Adjektive)</h3>
+        
+        <div style="background-color: #F8FAFC; padding: 12px; border-left: 4px solid var(--accent); border-radius: 4px; margin-bottom: 15px;">
+            <p style="margin: 0; font-size: 1.05em; color: #2C3E50;">
+                <strong>💡 核心规则：</strong><br>
+                - <strong>修饰名词时：</strong> 比较级形式先加 <strong>-er</strong>，再根据其在句中的性、数、格添加相应的形容词词尾。<br>
+                - <strong>表语或其他情况：</strong> 基本形式为 <strong>形容词比较级 (-er) + als + 被比较对象</strong>。
+            </p>
+        </div>
+
+        <div class="vocab-list-box">
+            <p><strong>📌 变形与特殊规则 (点击阴影查看)：</strong></p>
+            <ul>
+                <li><strong>变音规则 (a/o/u 变为 ä/ö/ü)：</strong> warm ➡️ <span class="blur-text" onclick="this.classList.toggle('revealed')">wärmer</span> / groß ➡️ <span class="blur-text" onclick="this.classList.toggle('revealed')">größer</span> / jung ➡️ <span class="blur-text" onclick="this.classList.toggle('revealed')">jünger</span></li>
+                <li><strong>带 -er 词尾的形容词：</strong> teuer ➡️ <span class="blur-text" onclick="this.classList.toggle('revealed')">teurer</span> (去掉中间的 e 再加 -er)</li>
+                <li><strong>特殊不规则变化：</strong> gut ➡️ <span class="blur-text" onclick="this.classList.toggle('revealed')">besser</span> / viel ➡️ <span class="blur-text" onclick="this.classList.toggle('revealed')">mehr</span> / gern ➡️ <span class="blur-text" onclick="this.classList.toggle('revealed')">lieber</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 模块：交际与词汇互动区 (Kapitel 7) -->
+    <!-- ========================================== -->
+    <div class="vocab-section" id="k7-vocab">
+        <h3 class="vocab-title">💬 K7 交际与核心词汇 (Wege, Wohnen & Hausordnung)</h3>
+
+        <!-- 第一部分：问路与指路 (Wie komme ich zu...?) -->
+        <p><strong>1. 问路与指路 (Wege beschreiben) —— 点击卡片翻转</strong></p>
+        <div class="flashcard-grid">
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="font-size: 0.9em;">Wie komme ich zum Hotel?</div>
+                    <div class="flip-card-back">请问去酒店怎么走？</div>
+                </div>
+            </div>
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="font-size: 0.85em;">Gehen Sie geradeaus bis zur Hauptstraße.</div>
+                    <div class="flip-card-back">一直往前走到主街。</div>
+                </div>
+            </div>
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="font-size: 0.9em;">Fahren Sie bis zur Ampel.</div>
+                    <div class="flip-card-back">乘车/开车一直到红绿灯处。</div>
+            </div>
+            </div>
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="font-size: 0.85em;">An der Ampel müssen Sie links abbiegen.</div>
+                    <div class="flip-card-back">在红绿灯处您必须左转。</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第二部分：居住与找房 (Wohnen) -->
+        <div class="vocab-list-box" style="margin-top: 15px;">
+            <p><strong>🏠 居住与找房 (Wohnen) —— 点击阴影自测填空：</strong></p>
+            <ul>
+                <li>寻找房源：Ich suche eine <span class="blur-text" onclick="this.classList.toggle('revealed')">Wohnung</span> / ein Haus. (我在找一间公寓/一栋房子。)</li>
+                <li>房屋面积：Die Wohnung hat 89 <span class="blur-text" onclick="this.classList.toggle('revealed')">Quadratmeter</span>. (这套公寓有89平方米。)</li>
+                <li>租金与附加费：Die monatliche Miete beträgt 800 Euro (ohne/mit) <span class="blur-text" onclick="this.classList.toggle('revealed')">Nebenkosten</span>. (月租金为800欧元，不含/含附加费。)</li>
+                <li>看房预约：Möchten Sie die Wohnung <span class="blur-text" onclick="this.classList.toggle('revealed')">besichtigen</span>? (您想参观/看这套公寓吗？)</li>
+            </ul>
+        </div>
+
+        <!-- 第三部分：房屋规章 (Hausordnung) -->
+        <div class="vocab-list-box" style="margin-top: 25px;">
+            <p><strong>📜 房屋规章 (Hausordnung) —— 点击阴影自测填空：</strong></p>
+            <ul>
+                <li>夜间安静：Alle Mieter müssen die Nachtruhe <span class="blur-text" onclick="this.classList.toggle('revealed')">respektieren</span>. (所有租户必须遵守夜间休息时间。)</li>
+                <li>禁止噪音：Man darf in der Wohnung und im Haus keinen <span class="blur-text" onclick="this.classList.toggle('revealed')">Lärm</span> machen. (人们不准在公寓和房子里制造噪音。)</li>
+                <li>禁止玩耍：Im Keller oder in der Tiefgarage ist Spielen <span class="blur-text" onclick="this.classList.toggle('revealed')">verboten</span>. (地下室或地下车库禁止玩耍。)</li>
+                <li>锁门规定：Haustüren und Hoftüren muss man von 22.00 bis 6.00 Uhr <span class="blur-text" onclick="this.classList.toggle('revealed')">abschließen</span>. (晚上10点到早上6点必须锁上大门和院门。)</li>
+            </ul>
+        </div>
+
+        <!-- 第四部分：核心动词搭配 -->
+        <div class="vocab-list-box" style="margin-top: 25px;">
+            <p><strong>🔑 核心动词搭配 (Verben) —— 点击阴影查看：</strong></p>
+            <ul>
+                <li>🛋️ 布置公寓：eine Wohnung <span class="blur-text" onclick="this.classList.toggle('revealed')">einrichten</span></li>
+                <li>🧹 打扫楼梯间：das Treppenhaus <span class="blur-text" onclick="this.classList.toggle('revealed')">reinigen</span></li>
+                <li>🍲 准备一顿饭：ein Menü <span class="blur-text" onclick="this.classList.toggle('revealed')">zubereiten</span></li>
+                <li>🖼️ 把东西挂在墙上：etwas an die Wand <span class="blur-text" onclick="this.classList.toggle('revealed')">hängen</span></li>
+                <li>📖 平放/放置在桌上：etwas auf den Tisch <span class="blur-text" onclick="this.classList.toggle('revealed')">legen</span> / stellen</li>
+            </ul>
+        </div>
+    </div>
+<div><!-- 💾 生成高清长图按钮 -->
+            <h1>
+
+            </h1>
+        <button class="no-print" onclick="saveAsImage()" style="background-color: #28C76F; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-left: 10px; font-size: 15px;">
+            📸 保存批改长图
+        </button>
+    </div>
+    </div>
+    <script src="../script.js"></script>
+</html>
+<script>
+function saveAsImage() {
+    // 1. 找到需要截图的主区域
+    const content = document.querySelector('.main-content');
+    
+    // 2. 临时隐藏所有带有 no-print 类的按钮
+    const buttons = document.querySelectorAll('.no-print');
+    buttons.forEach(btn => btn.style.display = 'none');
+
+    // 🌟 核心修复魔术：瞬间解除 .main-content 的内部高度限制
+    // 先记录它原本的样式
+    const originalOverflow = content.style.overflow;
+    const originalHeight = content.style.height;
+    
+    // 强行把它的高度撑到最大，让所有题目都露出来！
+    content.style.overflow = 'visible';
+    content.style.height = content.scrollHeight + 'px';
+
+    // 强制滚回最顶部
+    window.scrollTo(0, 0);
+
+    // 3. 开始生成长图
+    html2canvas(content, {
+        useCORS: true,
+        scale: 2,               // 高清放大
+        backgroundColor: '#f9f9f9', // 强制加上白/浅灰底色，防止背景变黑
+        y: 0,
+        windowHeight: content.scrollHeight // 告诉插件按撑开后的总高度来拍
+    }).then(canvas => {
+        // 🌟 截图完成后：瞬间把样式恢复原状，不影响学员继续滑动做题
+        content.style.overflow = originalOverflow;
+        content.style.height = originalHeight;
+        
+        // 恢复按钮显示
+        buttons.forEach(btn => btn.style.display = 'inline-block');
+        
+        // 触发自动下载图片
+        let link = document.createElement('a');
+        link.download = '德语语法自测_完整错题本.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+    });
+}
+</script>
+
+</body>
