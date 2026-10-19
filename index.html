@@ -354,31 +354,90 @@
         .modal-title { font-size: 1.8rem; color: var(--accent-color); margin-bottom: 1rem; }
         .modal-desc { text-align: left; font-size: 1.1rem; line-height: 1.8; color: #555; padding: 0 10px; white-space: pre-wrap; }
 
-        /* 针对手机等窄屏设备的样式适配 */
-        @media (max-width: 768px) {
-            /* 1. 调整导航栏主容器 */
-            .navbar {
-                flex-direction: column; /* 让 Logo 和导航菜单上下垂直排列 */
-                padding: 10px 15px;
-                align-items: center;
-            }
+        /* --- 电脑端基础样式 --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    position: relative;
+}
 
-            /* 2. 强制显示导航菜单链接 */
-            .nav-links {
-                display: flex !important; /* 强制取消 display: none */
-                flex-wrap: wrap;         /* 链接太多时自动折行 */
-                justify-content: center;
-                gap: 15px;               /* 链接之间的间距 */
-                margin-top: 10px;
-                width: 100%;
-            }
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
 
-            /* 3. 调整导航链接字号，适合手指点击 */
-            .nav-links a, .nav-item {
-                font-size: 15px;
-                padding: 8px 12px;
-            }
-        }
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* 三条杠按钮在电脑端强制隐藏 */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 19px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    width: 100%;
+    height: 3px;
+    background-color: #333333; /* 三条杠颜色 */
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* --- 📱 手机端适配 (屏幕宽度 <= 768px) --- */
+@media (max-width: 768px) {
+    /* 手机端显示三条杠 */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* 手机端默认隐藏下拉菜单 */
+    header nav {
+        display: none; 
+        position: absolute;
+        top: 100%; /* 在导航栏下方展开 */
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    /* 当点击三条杠后，给 nav 加上 active 类展开显示 */
+    header nav.active {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column; /* 菜单项在下拉框内部竖向展示 */
+        gap: 0;
+        padding: 10px 0;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 12px 25px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+}
+
 
     </style>
 </head>
@@ -390,7 +449,15 @@
             <img src="logo-studio.png" alt="Runner Studio Logo" class="logo-img">
             <div class="brand-name">跑鹅德语</div>
         </div>
-        <nav>
+        
+        <!-- 新增：移动端三条杠按钮 -->
+        <button class="menu-toggle" id="menuToggle" aria-label="切换导航菜单">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="navMenu">
             <ul>
                 <li><a href="#about">关于我们</a></li>
                 <li><a href="#team">讲师团队</a></li>
@@ -399,7 +466,6 @@
                 <li><a href="#reviews">学员评价</a></li>
                 <li><a href="#contact">联系方式</a></li>
                 <li><a href="tools/Begegnungen_A/index.html">自学工具</a></li>
-
             </ul>
         </nav>
     </header>
@@ -635,6 +701,24 @@
         function closeModalBtn() {
             document.getElementById('infoModal').style.display = 'none';
         }
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuToggle = document.getElementById('menuToggle');
+                const navMenu = document.getElementById('navMenu');
+
+                if (menuToggle && navMenu) {
+                    // 点击三条杠：展开/收起菜单
+                    menuToggle.addEventListener('click', function() {
+                        navMenu.classList.toggle('active');
+                    });
+
+                    // 点击下拉菜单里的任意链接（比如点击“关于我们”或“自学工具”）：自动收起菜单
+                    navMenu.querySelectorAll('a').forEach(link => {
+                        link.addEventListener('click', function() {
+                            navMenu.classList.remove('active');
+                        });
+                    });
+                }
+            });
     </script>
 
 </body>
