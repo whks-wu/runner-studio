@@ -5,7 +5,7 @@ teaches German to Chinese‑speaking learners and advises them on studying in Ge
 
 > 🇬🇧 [English](#english) · 🇩🇪 [Deutsch](#deutsch)
 
-![Runner Studio – landing page](docs/screenshot.png)
+![Runner Studio – landing page](docs/screenshot.jpg)
 
 <details>
 <summary>More screenshots · Weitere Screenshots</summary>
