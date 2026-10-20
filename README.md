@@ -12,7 +12,7 @@ teaches German to Chinese‑speaking learners and advises them on studying in Ge
 
 **Full page · Gesamte Seite**
 
-![Full page](docs/screenshot-full.jpg)
+![Full page](docs/screenshot-full.png)
 
 **Embedded exercises · Eingebettete Übungen**
 
@@ -20,7 +20,7 @@ teaches German to Chinese‑speaking learners and advises them on studying in Ge
 
 **Mobile · Mobil**
 
-<img src="docs/mobile-1.jpg" width="320"> <img src="docs/mobile-2.jpg" width="320">
+<img src="docs/mobile-1.jpeg" width="320">
 
 </details>
 
