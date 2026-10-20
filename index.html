@@ -474,9 +474,16 @@ header nav ul li a {
     <div class="hero">
         <h1>跑鹅德语 Runner Studio</h1>
         <p>跑鹅德语，你留德路上最贴心的助手！</p>
-        <!-- 咨询表单区域 -->
-        <section id="contact-form-section" style="max-width: 600px; margin: 40px auto; padding: 25px; background: #f9f9f9; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-            <h3 style="text-align: center; margin-bottom: 8px; color: #333;">立即咨询</h3>
+        <!-- 1. 触发咨询的按钮区域 -->
+        <div style="text-align: center; margin: 40px 0;">
+            <button id="toggleFormBtn" style="padding: 12px 30px; background-color: #0056b3; color: white; border: none; border-radius: 25px; font-size: 18px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px rgba(0,86,179,0.3); transition: transform 0.2s, background-color 0.2s;">
+                💬 立即咨询
+            </button>
+        </div>
+
+        <!-- 2. 咨询表单区域 (默认隐藏 display: none) -->
+        <section id="contact-form-section" style="display: none; max-width: 600px; margin: 0 auto 40px auto; padding: 25px; background: #f9f9f9; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: opacity 0.3s ease;">
+            <h3 style="text-align: center; margin-bottom: 8px; color: #333;">🇩🇪 立即预约 / 1对1咨询</h3>
             <p style="text-align: center; color: #666; font-size: 14px; margin-bottom: 20px;">提交后信息将直达老师邮箱，我们会尽快与您联系！</p>
 
             <!-- 注意：把下面的 action 替换成你自己在 Formspree 获取的专属链接 -->
@@ -485,13 +492,13 @@ header nav ul li a {
                 <!-- 姓名 -->
                 <div style="margin-bottom: 15px;">
                     <label style="display: block; margin-bottom: 5px; font-weight: 500; font-size: 14px;">您的称呼 *</label>
-                    <input type="text" name="name" required placeholder="如：张三李四 / Alex"
-                        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-border;">
+                    <input type="text" name="name" required placeholder="如：张三 / Alex" 
+                        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;">
                 </div>
 
                 <!-- 微信/联系方式 -->
                 <div style="margin-bottom: 15px;">
-                    <label style="display: block; margin-bottom: 5px; font-weight: 500; font-size: 14px;">微信号 / 手机号 / 邮箱 *</label>
+                    <label style="display: block; margin-bottom: 5px; font-weight: 500; font-size: 14px;">微信号 / QQ号 / 邮箱 *</label>
                     <input type="text" name="contact" required placeholder="方便我们加您微信或回复" 
                         style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;">
                 </div>
@@ -503,15 +510,16 @@ header nav ul li a {
                         <option value="零基础入门">零基础入门</option>
                         <option value="A1-A2 阶段巩固">A1-A2 阶段巩固</option>
                         <option value="B1-B2 强化/备考">B1-B2 强化/备考</option>
-                        <option value="1对1定制辅导/语法拆解">1对1定制辅导</option>
+                        <option value="1对1定制辅导/语法拆解">1对1定制辅导/语法拆解</option>
                         <option value="自学软件/工具咨询">自学软件/工具咨询</option>
+                        <option value="留德咨询">双元制/机会卡/留学</option>
                     </select>
                 </div>
 
                 <!-- 详细咨询留言 -->
                 <div style="margin-bottom: 20px;">
                     <label style="display: block; margin-bottom: 5px; font-weight: 500; font-size: 14px;">咨询问题 / 备注</label>
-                    <textarea name="message" rows="4" placeholder="例如：计划今年考德福/歌德，想了解1对1课程安排与费用...想咨询如何申请双元制/机会卡/留学" 
+                    <textarea name="message" rows="4" placeholder="例如：计划今年考德福/歌德，想了解1对1课程安排与费用..." 
                             style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;"></textarea>
                 </div>
 
@@ -525,9 +533,9 @@ header nav ul li a {
                 <p id="formStatus" style="text-align: center; margin-top: 10px; font-size: 14px; display: none;"></p>
             </form>
         </section>
-
     </div>
 
+       
     <!-- 关于我们 -->
     <section id="about">
         <div class="about">
@@ -666,7 +674,7 @@ header nav ul li a {
                 <div class="future-icon">💻</div>
                 <div class="future-content">
                     <h3>德语学习软件开发</h3>
-                    <p>我们正在研发最适合中文母语者的德语学习App，结合记忆曲线、中文思维、心理语言学和外语习得原理，让德语不再难学。</p>
+                    <p>我们正在研发最适合中文母语者的德语学习App，结合记忆曲线、中文思维、心理语言学和外语习得，让德语不再难学。</p>
                 </div>
             </div>
 
@@ -763,50 +771,92 @@ header nav ul li a {
                 }
             });
     </script>
-        <script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // --- 1. 控制表单的展开/收起 ---
+    const toggleBtn = document.getElementById("toggleFormBtn");
+    const formSection = document.getElementById("contact-form-section");
+
+    if (toggleBtn && formSection) {
+        toggleBtn.addEventListener('click', function() {
+            if (formSection.style.display === "none") {
+                // 如果是隐藏的，则显示
+                formSection.style.display = "block";
+                // 可选：加一点淡入效果
+                formSection.style.opacity = 0;
+                setTimeout(() => formSection.style.opacity = 1, 10);
+                
+                // 更改按钮文字和样式（可选）
+                toggleBtn.innerText = "收起咨询表单";
+                toggleBtn.style.backgroundColor = "#555"; 
+            } else {
+                // 如果是显示的，则隐藏
+                formSection.style.display = "none";
+                
+                // 恢复按钮文字和样式
+                toggleBtn.innerText = "💬 立即咨询";
+                toggleBtn.style.backgroundColor = "#0056b3";
+            }
+        });
+    }
+
+    // --- 2. 表单异步提交逻辑 (防止页面跳转) ---
     const form = document.getElementById("consultForm");
     const status = document.getElementById("formStatus");
     const submitBtn = document.getElementById("submitBtn");
 
-    async function handleSubmit(event) {
-        event.preventDefault();
-        submitBtn.disabled = true;
-        submitBtn.innerText = "正在提交...";
+    if (form) {
+        form.addEventListener("submit", async function(event) {
+            event.preventDefault(); // 阻止默认的表单跳转
+            
+            // 改变按钮状态，防止重复提交
+            submitBtn.disabled = true;
+            submitBtn.innerText = "正在提交...";
 
-        const data = new FormData(event.target);
-        fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-        }).then(response => {
-        if (response.ok) {
-            status.style.display = "block";
-            status.style.color = "green";
-            status.innerHTML = "✅ 提交成功！我们会在 24 小时内通过微信/邮件联系您！";
-            form.reset();
-            submitBtn.innerText = "提交成功";
-        } else {
-            response.json().then(data => {
-            status.style.display = "block";
-            status.style.color = "red";
-            status.innerHTML = "❌ 提交失败，请重试或直接私信小红书/加微信咨询。";
-            submitBtn.disabled = false;
-            submitBtn.innerText = "重新提交";
-            })
-        }
-        }).catch(error => {
-        status.style.display = "block";
-        status.style.color = "red";
-        status.innerHTML = "❌ 网络出现问题，请稍后再试。";
-        submitBtn.disabled = false;
-        submitBtn.innerText = "重新提交";
+            const data = new FormData(form);
+            fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
+                    status.style.display = "block";
+                    status.style.color = "green";
+                    status.innerHTML = "✅ 提交成功！我们会尽快通过微信/邮件联系您！";
+                    form.reset(); // 清空表单内容
+                    submitBtn.innerText = "提交成功";
+                    
+                    // 提交成功后，延迟 3 秒自动收起表单并恢复按钮状态
+                    setTimeout(() => {
+                        formSection.style.display = "none";
+                        toggleBtn.innerText = "💬 立即咨询 1对1 辅导";
+                        toggleBtn.style.backgroundColor = "#0056b3";
+                        
+                        status.style.display = "none";
+                        submitBtn.disabled = false;
+                        submitBtn.innerText = "确认提交咨询";
+                    }, 3000);
+                } else {
+                    response.json().then(data => {
+                        status.style.display = "block";
+                        status.style.color = "red";
+                        status.innerHTML = "❌ 提交失败，请重试或直接加微信。";
+                        submitBtn.disabled = false;
+                        submitBtn.innerText = "重新提交";
+                    })
+                }
+            }).catch(error => {
+                status.style.display = "block";
+                status.style.color = "red";
+                status.innerHTML = "❌ 网络错误，请稍后再试。";
+                submitBtn.disabled = false;
+                submitBtn.innerText = "重新提交";
+            });
         });
     }
-
-    form.addEventListener("submit", handleSubmit);
-    </script>
+});
+</script>
+    
 
 </body>
 </html>
