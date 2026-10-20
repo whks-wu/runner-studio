@@ -55,6 +55,7 @@ native speakers learning German.
 | German mini‑games | Two interactive exercises — a situational matching task and a cloze test — embedded from [LearningApps.org](https://learningapps.org) in responsive `<iframe>` wrappers |
 | Reviews | Learner feedback |
 | Roadmap | Planned German‑learning app and video course library, with clickable topic tags that open detail modals |
+| Tools for self-learning | interactive tools for Beginner
 | Footer | QR codes for Xiaohongshu and WeChat, plus X (Twitter) and Xianyu links |
 
 A single generic `openModal(img, title, desc)` function powers every modal on the page —
