@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 // 定义你的访问密码（可以设置多个通用卡密）
-const VALID_PASSWORDS = ["DeuVIP001", "BegegnungA2", "VielErfolg88","Wunderbar100","HalloDeutsch",
+const VALID_PASSWORDS = ["DeuVIP001", "BegegnungA2","Wunderbar100","HalloDeutsch",
     "PassA2Now", "GrammatikTop","Fleissig2026","SehrGut007","LernenVIP","DeutschPro20","SprechenGut",
     "Wortschatz99", "SuperDeutsch", "KlarMachen", "A2Bestehen","HalloBerlin", "MeisterA2", "EinfachDeu",
     "Perfekt2026"];
